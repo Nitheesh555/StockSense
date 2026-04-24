@@ -1,0 +1,616 @@
+2026-04-23 19:39:36,133 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 19:39:36,133 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-23 19:39:36,142 [INFO] stock_analyzer: ============================================================
+2026-04-23 19:39:36,142 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-23 19:39:36,142 [INFO] stock_analyzer: ============================================================
+2026-04-23 19:39:38,123 [WARNING] stock_analyzer: Telegram send failed: 404 Client Error: Not Found for url: https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage
+2026-04-23 19:39:38,132 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-23 19:39:38,179 [INFO] stock_analyzer: Fetching RELIANCE [15m/5d] from yfinance
+2026-04-23 19:39:40,256 [ERROR] stock_analyzer: Failed to fetch RELIANCE: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:40,262 [WARNING] stock_analyzer: No price data for RELIANCE, skipping
+2026-04-23 19:39:41,265 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-23 19:39:41,273 [INFO] stock_analyzer: Fetching TCS [15m/5d] from yfinance
+2026-04-23 19:39:41,761 [ERROR] stock_analyzer: Failed to fetch TCS: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:41,761 [WARNING] stock_analyzer: No price data for TCS, skipping
+2026-04-23 19:39:42,769 [INFO] stock_analyzer: [3/15] Processing HDFCBANK
+2026-04-23 19:39:42,775 [INFO] stock_analyzer: Fetching HDFCBANK [15m/5d] from yfinance
+2026-04-23 19:39:43,622 [ERROR] stock_analyzer: Failed to fetch HDFCBANK: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:43,622 [WARNING] stock_analyzer: No price data for HDFCBANK, skipping
+2026-04-23 19:39:44,625 [INFO] stock_analyzer: [4/15] Processing INFY
+2026-04-23 19:39:44,649 [INFO] stock_analyzer: Fetching INFY [15m/5d] from yfinance
+2026-04-23 19:39:45,096 [ERROR] stock_analyzer: Failed to fetch INFY: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:45,096 [WARNING] stock_analyzer: No price data for INFY, skipping
+2026-04-23 19:39:46,103 [INFO] stock_analyzer: [5/15] Processing ICICIBANK
+2026-04-23 19:39:46,112 [INFO] stock_analyzer: Fetching ICICIBANK [15m/5d] from yfinance
+2026-04-23 19:39:46,584 [ERROR] stock_analyzer: Failed to fetch ICICIBANK: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:46,584 [WARNING] stock_analyzer: No price data for ICICIBANK, skipping
+2026-04-23 19:39:47,592 [INFO] stock_analyzer: [6/15] Processing SBIN
+2026-04-23 19:39:47,595 [INFO] stock_analyzer: Fetching SBIN [15m/5d] from yfinance
+2026-04-23 19:39:48,066 [ERROR] stock_analyzer: Failed to fetch SBIN: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:48,066 [WARNING] stock_analyzer: No price data for SBIN, skipping
+2026-04-23 19:39:49,071 [INFO] stock_analyzer: [7/15] Processing AXISBANK
+2026-04-23 19:39:49,072 [INFO] stock_analyzer: Fetching AXISBANK [15m/5d] from yfinance
+2026-04-23 19:39:49,720 [ERROR] stock_analyzer: Failed to fetch AXISBANK: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:49,720 [WARNING] stock_analyzer: No price data for AXISBANK, skipping
+2026-04-23 19:39:50,731 [INFO] stock_analyzer: [8/15] Processing BAJFINANCE
+2026-04-23 19:39:50,754 [INFO] stock_analyzer: Fetching BAJFINANCE [15m/5d] from yfinance
+2026-04-23 19:39:51,219 [ERROR] stock_analyzer: Failed to fetch BAJFINANCE: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:51,219 [WARNING] stock_analyzer: No price data for BAJFINANCE, skipping
+2026-04-23 19:39:52,223 [INFO] stock_analyzer: [9/15] Processing WIPRO
+2026-04-23 19:39:52,225 [INFO] stock_analyzer: Fetching WIPRO [15m/5d] from yfinance
+2026-04-23 19:39:52,735 [ERROR] stock_analyzer: Failed to fetch WIPRO: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:52,735 [WARNING] stock_analyzer: No price data for WIPRO, skipping
+2026-04-23 19:39:53,744 [INFO] stock_analyzer: [10/15] Processing LT
+2026-04-23 19:39:53,748 [INFO] stock_analyzer: Fetching LT [15m/5d] from yfinance
+2026-04-23 19:39:54,249 [ERROR] stock_analyzer: Failed to fetch LT: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:54,250 [WARNING] stock_analyzer: No price data for LT, skipping
+2026-04-23 19:39:55,252 [INFO] stock_analyzer: [11/15] Processing TATAMOTORS
+2026-04-23 19:39:55,252 [INFO] stock_analyzer: Fetching TATAMOTORS [15m/5d] from yfinance
+2026-04-23 19:39:56,755 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-23 19:39:57,816 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-23 19:39:57,820 [ERROR] yfinance: 
+1 Failed download:
+2026-04-23 19:39:57,820 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-23 19:39:57,824 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-23 19:39:57,832 [WARNING] stock_analyzer: No price data for TATAMOTORS, skipping
+2026-04-23 19:39:58,833 [INFO] stock_analyzer: [12/15] Processing TATASTEEL
+2026-04-23 19:39:58,841 [INFO] stock_analyzer: Fetching TATASTEEL [15m/5d] from yfinance
+2026-04-23 19:39:59,286 [ERROR] stock_analyzer: Failed to fetch TATASTEEL: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:39:59,286 [WARNING] stock_analyzer: No price data for TATASTEEL, skipping
+2026-04-23 19:40:00,289 [INFO] stock_analyzer: [13/15] Processing MARUTI
+2026-04-23 19:40:00,296 [INFO] stock_analyzer: Fetching MARUTI [15m/5d] from yfinance
+2026-04-23 19:40:00,963 [ERROR] stock_analyzer: Failed to fetch MARUTI: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:00,963 [WARNING] stock_analyzer: No price data for MARUTI, skipping
+2026-04-23 19:40:01,968 [INFO] stock_analyzer: [14/15] Processing SUNPHARMA
+2026-04-23 19:40:01,970 [INFO] stock_analyzer: Fetching SUNPHARMA [15m/5d] from yfinance
+2026-04-23 19:40:02,483 [ERROR] stock_analyzer: Failed to fetch SUNPHARMA: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:02,483 [WARNING] stock_analyzer: No price data for SUNPHARMA, skipping
+2026-04-23 19:40:03,486 [INFO] stock_analyzer: [15/15] Processing NTPC
+2026-04-23 19:40:03,490 [INFO] stock_analyzer: Fetching NTPC [15m/5d] from yfinance
+2026-04-23 19:40:04,014 [ERROR] stock_analyzer: Failed to fetch NTPC: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:04,022 [WARNING] stock_analyzer: No price data for NTPC, skipping
+2026-04-23 19:40:05,024 [INFO] stock_analyzer: Scan complete. 0/0 stocks generated actionable signals.
+2026-04-23 19:40:10,025 [INFO] stock_analyzer: ============================================================
+2026-04-23 19:40:10,030 [INFO] stock_analyzer: Starting SWING scan: 10 stocks | Min confidence: 7
+2026-04-23 19:40:10,030 [INFO] stock_analyzer: ============================================================
+2026-04-23 19:40:11,674 [WARNING] stock_analyzer: Telegram send failed: 404 Client Error: Not Found for url: https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage
+2026-04-23 19:40:11,680 [INFO] stock_analyzer: [1/10] Processing ADANIENT
+2026-04-23 19:40:11,687 [INFO] stock_analyzer: Fetching ADANIENT [1d/90d] from yfinance
+2026-04-23 19:40:12,276 [ERROR] stock_analyzer: Failed to fetch ADANIENT: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:12,276 [WARNING] stock_analyzer: No price data for ADANIENT, skipping
+2026-04-23 19:40:13,279 [INFO] stock_analyzer: [2/10] Processing ADANIPORTS
+2026-04-23 19:40:13,286 [INFO] stock_analyzer: Fetching ADANIPORTS [1d/90d] from yfinance
+2026-04-23 19:40:13,772 [ERROR] stock_analyzer: Failed to fetch ADANIPORTS: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:13,774 [WARNING] stock_analyzer: No price data for ADANIPORTS, skipping
+2026-04-23 19:40:14,776 [INFO] stock_analyzer: [3/10] Processing ULTRACEMCO
+2026-04-23 19:40:14,779 [INFO] stock_analyzer: Fetching ULTRACEMCO [1d/90d] from yfinance
+2026-04-23 19:40:15,303 [ERROR] stock_analyzer: Failed to fetch ULTRACEMCO: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:15,303 [WARNING] stock_analyzer: No price data for ULTRACEMCO, skipping
+2026-04-23 19:40:16,315 [INFO] stock_analyzer: [4/10] Processing NESTLEIND
+2026-04-23 19:40:16,319 [INFO] stock_analyzer: Fetching NESTLEIND [1d/90d] from yfinance
+2026-04-23 19:40:16,876 [ERROR] stock_analyzer: Failed to fetch NESTLEIND: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:16,876 [WARNING] stock_analyzer: No price data for NESTLEIND, skipping
+2026-04-23 19:40:17,886 [INFO] stock_analyzer: [5/10] Processing TITAN
+2026-04-23 19:40:17,896 [INFO] stock_analyzer: Fetching TITAN [1d/90d] from yfinance
+2026-04-23 19:40:18,335 [ERROR] stock_analyzer: Failed to fetch TITAN: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:18,335 [WARNING] stock_analyzer: No price data for TITAN, skipping
+2026-04-23 19:40:19,339 [INFO] stock_analyzer: [6/10] Processing POWERGRID
+2026-04-23 19:40:19,340 [INFO] stock_analyzer: Fetching POWERGRID [1d/90d] from yfinance
+2026-04-23 19:40:19,851 [ERROR] stock_analyzer: Failed to fetch POWERGRID: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:19,851 [WARNING] stock_analyzer: No price data for POWERGRID, skipping
+2026-04-23 19:40:20,860 [INFO] stock_analyzer: [7/10] Processing ONGC
+2026-04-23 19:40:20,860 [INFO] stock_analyzer: Fetching ONGC [1d/90d] from yfinance
+2026-04-23 19:40:21,539 [ERROR] stock_analyzer: Failed to fetch ONGC: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:21,539 [WARNING] stock_analyzer: No price data for ONGC, skipping
+2026-04-23 19:40:22,548 [INFO] stock_analyzer: [8/10] Processing COALINDIA
+2026-04-23 19:40:22,553 [INFO] stock_analyzer: Fetching COALINDIA [1d/90d] from yfinance
+2026-04-23 19:40:22,995 [ERROR] stock_analyzer: Failed to fetch COALINDIA: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:23,003 [WARNING] stock_analyzer: No price data for COALINDIA, skipping
+2026-04-23 19:40:24,006 [INFO] stock_analyzer: [9/10] Processing DIVISLAB
+2026-04-23 19:40:24,014 [INFO] stock_analyzer: Fetching DIVISLAB [1d/90d] from yfinance
+2026-04-23 19:40:24,513 [ERROR] stock_analyzer: Failed to fetch DIVISLAB: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:24,514 [WARNING] stock_analyzer: No price data for DIVISLAB, skipping
+2026-04-23 19:40:25,515 [INFO] stock_analyzer: [10/10] Processing DRREDDY
+2026-04-23 19:40:25,524 [INFO] stock_analyzer: Fetching DRREDDY [1d/90d] from yfinance
+2026-04-23 19:40:26,018 [ERROR] stock_analyzer: Failed to fetch DRREDDY: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:40:26,021 [WARNING] stock_analyzer: No price data for DRREDDY, skipping
+2026-04-23 19:40:27,023 [INFO] stock_analyzer: Scan complete. 0/0 stocks generated actionable signals.
+2026-04-23 19:43:29,648 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 19:43:29,648 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-23 19:43:29,648 [INFO] stock_analyzer: ============================================================
+2026-04-23 19:43:29,648 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-23 19:43:29,648 [INFO] stock_analyzer: ============================================================
+2026-04-23 19:43:30,982 [WARNING] stock_analyzer: Telegram send failed: 404 Client Error: Not Found for url: https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage
+2026-04-23 19:43:30,995 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-23 19:43:31,015 [INFO] stock_analyzer: Fetching RELIANCE [15m/5d] from yfinance
+2026-04-23 19:43:31,767 [ERROR] stock_analyzer: Failed to fetch RELIANCE: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:31,767 [WARNING] stock_analyzer: No price data for RELIANCE, skipping
+2026-04-23 19:43:32,775 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-23 19:43:32,775 [INFO] stock_analyzer: Fetching TCS [15m/5d] from yfinance
+2026-04-23 19:43:33,077 [ERROR] stock_analyzer: Failed to fetch TCS: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:33,077 [WARNING] stock_analyzer: No price data for TCS, skipping
+2026-04-23 19:43:34,079 [INFO] stock_analyzer: [3/15] Processing HDFCBANK
+2026-04-23 19:43:34,083 [INFO] stock_analyzer: Fetching HDFCBANK [15m/5d] from yfinance
+2026-04-23 19:43:34,393 [ERROR] stock_analyzer: Failed to fetch HDFCBANK: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:34,394 [WARNING] stock_analyzer: No price data for HDFCBANK, skipping
+2026-04-23 19:43:35,396 [INFO] stock_analyzer: [4/15] Processing INFY
+2026-04-23 19:43:35,398 [INFO] stock_analyzer: Fetching INFY [15m/5d] from yfinance
+2026-04-23 19:43:35,681 [ERROR] stock_analyzer: Failed to fetch INFY: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:35,681 [WARNING] stock_analyzer: No price data for INFY, skipping
+2026-04-23 19:43:36,685 [INFO] stock_analyzer: [5/15] Processing ICICIBANK
+2026-04-23 19:43:36,685 [INFO] stock_analyzer: Fetching ICICIBANK [15m/5d] from yfinance
+2026-04-23 19:43:37,493 [ERROR] stock_analyzer: Failed to fetch ICICIBANK: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:37,493 [WARNING] stock_analyzer: No price data for ICICIBANK, skipping
+2026-04-23 19:43:38,499 [INFO] stock_analyzer: [6/15] Processing SBIN
+2026-04-23 19:43:38,499 [INFO] stock_analyzer: Fetching SBIN [15m/5d] from yfinance
+2026-04-23 19:43:38,832 [ERROR] stock_analyzer: Failed to fetch SBIN: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:38,832 [WARNING] stock_analyzer: No price data for SBIN, skipping
+2026-04-23 19:43:39,843 [INFO] stock_analyzer: [7/15] Processing AXISBANK
+2026-04-23 19:43:39,847 [INFO] stock_analyzer: Fetching AXISBANK [15m/5d] from yfinance
+2026-04-23 19:43:40,241 [ERROR] stock_analyzer: Failed to fetch AXISBANK: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:40,246 [WARNING] stock_analyzer: No price data for AXISBANK, skipping
+2026-04-23 19:43:41,255 [INFO] stock_analyzer: [8/15] Processing BAJFINANCE
+2026-04-23 19:43:41,255 [INFO] stock_analyzer: Fetching BAJFINANCE [15m/5d] from yfinance
+2026-04-23 19:43:41,559 [ERROR] stock_analyzer: Failed to fetch BAJFINANCE: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:41,560 [WARNING] stock_analyzer: No price data for BAJFINANCE, skipping
+2026-04-23 19:43:42,560 [INFO] stock_analyzer: [9/15] Processing WIPRO
+2026-04-23 19:43:42,565 [INFO] stock_analyzer: Fetching WIPRO [15m/5d] from yfinance
+2026-04-23 19:43:42,846 [ERROR] stock_analyzer: Failed to fetch WIPRO: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:42,846 [WARNING] stock_analyzer: No price data for WIPRO, skipping
+2026-04-23 19:43:43,848 [INFO] stock_analyzer: [10/15] Processing LT
+2026-04-23 19:43:43,850 [INFO] stock_analyzer: Fetching LT [15m/5d] from yfinance
+2026-04-23 19:43:44,166 [ERROR] stock_analyzer: Failed to fetch LT: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:44,166 [WARNING] stock_analyzer: No price data for LT, skipping
+2026-04-23 19:43:45,172 [INFO] stock_analyzer: [11/15] Processing TATAMOTORS
+2026-04-23 19:43:45,172 [INFO] stock_analyzer: Fetching TATAMOTORS [15m/5d] from yfinance
+2026-04-23 19:43:46,459 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-23 19:43:47,377 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-23 19:43:47,381 [ERROR] yfinance: 
+1 Failed download:
+2026-04-23 19:43:47,381 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-23 19:43:47,381 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-23 19:43:47,381 [WARNING] stock_analyzer: No price data for TATAMOTORS, skipping
+2026-04-23 19:43:48,388 [INFO] stock_analyzer: [12/15] Processing TATASTEEL
+2026-04-23 19:43:48,388 [INFO] stock_analyzer: Fetching TATASTEEL [15m/5d] from yfinance
+2026-04-23 19:43:48,700 [ERROR] stock_analyzer: Failed to fetch TATASTEEL: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:48,700 [WARNING] stock_analyzer: No price data for TATASTEEL, skipping
+2026-04-23 19:43:49,701 [INFO] stock_analyzer: [13/15] Processing MARUTI
+2026-04-23 19:43:49,706 [INFO] stock_analyzer: Fetching MARUTI [15m/5d] from yfinance
+2026-04-23 19:43:50,092 [ERROR] stock_analyzer: Failed to fetch MARUTI: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:50,092 [WARNING] stock_analyzer: No price data for MARUTI, skipping
+2026-04-23 19:43:51,097 [INFO] stock_analyzer: [14/15] Processing SUNPHARMA
+2026-04-23 19:43:51,098 [INFO] stock_analyzer: Fetching SUNPHARMA [15m/5d] from yfinance
+2026-04-23 19:43:51,397 [ERROR] stock_analyzer: Failed to fetch SUNPHARMA: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:51,397 [WARNING] stock_analyzer: No price data for SUNPHARMA, skipping
+2026-04-23 19:43:52,406 [INFO] stock_analyzer: [15/15] Processing NTPC
+2026-04-23 19:43:52,406 [INFO] stock_analyzer: Fetching NTPC [15m/5d] from yfinance
+2026-04-23 19:43:52,733 [ERROR] stock_analyzer: Failed to fetch NTPC: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:43:52,733 [WARNING] stock_analyzer: No price data for NTPC, skipping
+2026-04-23 19:43:53,741 [INFO] stock_analyzer: Scan complete. 0/0 stocks generated actionable signals.
+2026-04-23 19:43:58,742 [INFO] stock_analyzer: ============================================================
+2026-04-23 19:43:58,742 [INFO] stock_analyzer: Starting SWING scan: 10 stocks | Min confidence: 7
+2026-04-23 19:43:58,744 [INFO] stock_analyzer: ============================================================
+2026-04-23 19:43:59,933 [WARNING] stock_analyzer: Telegram send failed: 404 Client Error: Not Found for url: https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage
+2026-04-23 19:43:59,948 [INFO] stock_analyzer: [1/10] Processing ADANIENT
+2026-04-23 19:43:59,948 [INFO] stock_analyzer: Fetching ADANIENT [1d/90d] from yfinance
+2026-04-23 19:44:00,236 [ERROR] stock_analyzer: Failed to fetch ADANIENT: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:00,241 [WARNING] stock_analyzer: No price data for ADANIENT, skipping
+2026-04-23 19:44:01,242 [INFO] stock_analyzer: [2/10] Processing ADANIPORTS
+2026-04-23 19:44:01,242 [INFO] stock_analyzer: Fetching ADANIPORTS [1d/90d] from yfinance
+2026-04-23 19:44:01,535 [ERROR] stock_analyzer: Failed to fetch ADANIPORTS: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:01,535 [WARNING] stock_analyzer: No price data for ADANIPORTS, skipping
+2026-04-23 19:44:02,542 [INFO] stock_analyzer: [3/10] Processing ULTRACEMCO
+2026-04-23 19:44:02,547 [INFO] stock_analyzer: Fetching ULTRACEMCO [1d/90d] from yfinance
+2026-04-23 19:44:02,850 [ERROR] stock_analyzer: Failed to fetch ULTRACEMCO: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:02,851 [WARNING] stock_analyzer: No price data for ULTRACEMCO, skipping
+2026-04-23 19:44:03,852 [INFO] stock_analyzer: [4/10] Processing NESTLEIND
+2026-04-23 19:44:03,852 [INFO] stock_analyzer: Fetching NESTLEIND [1d/90d] from yfinance
+2026-04-23 19:44:04,161 [ERROR] stock_analyzer: Failed to fetch NESTLEIND: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:04,161 [WARNING] stock_analyzer: No price data for NESTLEIND, skipping
+2026-04-23 19:44:05,162 [INFO] stock_analyzer: [5/10] Processing TITAN
+2026-04-23 19:44:05,164 [INFO] stock_analyzer: Fetching TITAN [1d/90d] from yfinance
+2026-04-23 19:44:05,495 [ERROR] stock_analyzer: Failed to fetch TITAN: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:05,495 [WARNING] stock_analyzer: No price data for TITAN, skipping
+2026-04-23 19:44:06,504 [INFO] stock_analyzer: [6/10] Processing POWERGRID
+2026-04-23 19:44:06,506 [INFO] stock_analyzer: Fetching POWERGRID [1d/90d] from yfinance
+2026-04-23 19:44:06,826 [ERROR] stock_analyzer: Failed to fetch POWERGRID: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:06,826 [WARNING] stock_analyzer: No price data for POWERGRID, skipping
+2026-04-23 19:44:07,830 [INFO] stock_analyzer: [7/10] Processing ONGC
+2026-04-23 19:44:07,831 [INFO] stock_analyzer: Fetching ONGC [1d/90d] from yfinance
+2026-04-23 19:44:08,147 [ERROR] stock_analyzer: Failed to fetch ONGC: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:08,147 [WARNING] stock_analyzer: No price data for ONGC, skipping
+2026-04-23 19:44:09,151 [INFO] stock_analyzer: [8/10] Processing COALINDIA
+2026-04-23 19:44:09,151 [INFO] stock_analyzer: Fetching COALINDIA [1d/90d] from yfinance
+2026-04-23 19:44:09,565 [ERROR] stock_analyzer: Failed to fetch COALINDIA: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:09,565 [WARNING] stock_analyzer: No price data for COALINDIA, skipping
+2026-04-23 19:44:10,570 [INFO] stock_analyzer: [9/10] Processing DIVISLAB
+2026-04-23 19:44:10,570 [INFO] stock_analyzer: Fetching DIVISLAB [1d/90d] from yfinance
+2026-04-23 19:44:10,865 [ERROR] stock_analyzer: Failed to fetch DIVISLAB: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:10,865 [WARNING] stock_analyzer: No price data for DIVISLAB, skipping
+2026-04-23 19:44:11,873 [INFO] stock_analyzer: [10/10] Processing DRREDDY
+2026-04-23 19:44:11,877 [INFO] stock_analyzer: Fetching DRREDDY [1d/90d] from yfinance
+2026-04-23 19:44:12,397 [ERROR] stock_analyzer: Failed to fetch DRREDDY: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:44:12,397 [WARNING] stock_analyzer: No price data for DRREDDY, skipping
+2026-04-23 19:44:13,399 [INFO] stock_analyzer: Scan complete. 0/0 stocks generated actionable signals.
+2026-04-23 19:46:49,481 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 19:47:23,210 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 19:48:28,420 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 19:48:28,420 [INFO] stock_analyzer: Fetching TITAN [1d/90d] from yfinance
+2026-04-23 19:48:29,633 [ERROR] stock_analyzer: Failed to fetch TITAN: keys must be str, int, float, bool or None, not Timestamp
+2026-04-23 19:48:29,633 [WARNING] stock_analyzer: No price data for TITAN, skipping
+2026-04-23 19:55:59,434 [INFO] stock_analyzer: Fetching TITAN [1d/90d] from yfinance
+2026-04-23 19:55:59,450 [ERROR] yfinance: 
+1 Failed download:
+2026-04-23 19:55:59,450 [ERROR] yfinance: ['TITAN.NS']: OperationalError('unable to open database file')
+2026-04-23 19:55:59,451 [WARNING] stock_analyzer: No data returned for TITAN
+2026-04-23 19:56:39,717 [INFO] stock_analyzer: Fetching TITAN [1d/90d] from yfinance
+2026-04-23 20:11:29,143 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 20:11:29,144 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-23 20:11:29,144 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:11:29,144 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-23 20:11:29,144 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:11:30,439 [WARNING] stock_analyzer: Telegram send failed: 404 Client Error: Not Found for url: https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage
+2026-04-23 20:11:30,440 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-23 20:11:30,440 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-23 20:11:30,440 [INFO] stock_analyzer: Fetching RELIANCE [15m/5d] from yfinance
+2026-04-23 20:11:32,643 [INFO] stock_analyzer: Fetched fundamentals for RELIANCE: PE=0.0, ROE=0.0
+2026-04-23 20:11:42,379 [INFO] stock_analyzer: Sending RELIANCE to Claude for INTRADAY analysis...
+2026-04-23 20:11:43,176 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-04-23 20:11:43,176 [ERROR] stock_analyzer: Anthropic API error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CaLstcdDQL34hLHbKvNFW'}
+2026-04-23 20:11:48,584 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-04-23 20:11:48,590 [ERROR] stock_analyzer: Anthropic API error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CaLsu1pix4nKNcnEnoHEt'}
+2026-04-23 20:11:53,950 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-04-23 20:11:53,952 [ERROR] stock_analyzer: Anthropic API error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CaLsuQcRhxnAV5NWt1w2Q'}
+2026-04-23 20:11:53,952 [ERROR] stock_analyzer: Error analyzing RELIANCE: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CaLsuQcRhxnAV5NWt1w2Q'}
+2026-04-23 20:11:53,952 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-23 20:11:53,952 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-23 20:11:53,952 [INFO] stock_analyzer: Fetching TCS [15m/5d] from yfinance
+2026-04-23 20:11:55,303 [INFO] stock_analyzer: Fetched fundamentals for TCS: PE=0.0, ROE=0.0
+2026-04-23 20:11:57,257 [INFO] stock_analyzer: Sending TCS to Claude for INTRADAY analysis...
+2026-04-23 20:11:57,958 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 401 Unauthorized"
+2026-04-23 20:11:57,967 [ERROR] stock_analyzer: Anthropic API error: Error code: 401 - {'type': 'error', 'error': {'type': 'authentication_error', 'message': 'invalid x-api-key'}, 'request_id': 'req_011CaLsuhcNkAhnTgJhPjAt8'}
+2026-04-23 20:12:48,265 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 20:12:48,265 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-23 20:12:48,265 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:12:48,265 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-23 20:12:48,265 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:12:49,564 [WARNING] stock_analyzer: Telegram send failed: 404 Client Error: Not Found for url: https://api.telegram.org/botyour_telegram_bot_token_here/sendMessage
+2026-04-23 20:12:49,566 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-23 20:12:49,566 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-23 20:12:52,031 [INFO] stock_analyzer: Sending RELIANCE to Claude for INTRADAY analysis...
+2026-04-23 20:12:52,926 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-04-23 20:12:52,926 [ERROR] stock_analyzer: Anthropic API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaLsykUP76sc4tCzZgniH'}
+2026-04-23 20:12:58,478 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-04-23 20:12:58,479 [ERROR] stock_analyzer: Anthropic API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaLszA9vBtyvx48WE67k8'}
+2026-04-23 20:13:03,976 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-04-23 20:13:03,976 [ERROR] stock_analyzer: Anthropic API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaLsza2cUFAixsJGw5qU8'}
+2026-04-23 20:13:03,980 [ERROR] stock_analyzer: Error analyzing RELIANCE: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaLsza2cUFAixsJGw5qU8'}
+2026-04-23 20:13:03,980 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-23 20:13:03,980 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-23 20:13:05,909 [INFO] stock_analyzer: Sending TCS to Claude for INTRADAY analysis...
+2026-04-23 20:13:06,730 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-04-23 20:13:06,730 [ERROR] stock_analyzer: Anthropic API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaLszmEYzxX3nRrFR7K3i'}
+2026-04-23 20:16:45,984 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 20:16:45,984 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-23 20:16:45,984 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:16:45,984 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-23 20:16:45,984 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:16:45,984 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-23 20:16:45,984 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-23 20:16:48,422 [INFO] stock_analyzer: Sending RELIANCE to Claude for INTRADAY analysis...
+2026-04-23 20:16:49,310 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-04-23 20:16:49,312 [ERROR] stock_analyzer: Anthropic API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaLtHBRHpuLVd4ctrf5sL'}
+2026-04-23 20:16:49,312 [WARNING] stock_analyzer: Using fallback analysis for RELIANCE: Anthropic API credits are unavailable for this run.
+2026-04-23 20:16:50,352 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-23 20:16:50,352 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-23 20:16:52,477 [INFO] stock_analyzer: Sending TCS to Claude for INTRADAY analysis...
+2026-04-23 20:16:52,477 [WARNING] stock_analyzer: Using fallback analysis for TCS: Anthropic API credits are unavailable for this run.
+2026-04-23 20:16:53,486 [INFO] stock_analyzer: [3/15] Processing HDFCBANK
+2026-04-23 20:16:53,486 [INFO] stock_analyzer: --- Analyzing HDFCBANK [INTRADAY] ---
+2026-04-23 20:16:53,486 [INFO] stock_analyzer: Fetching HDFCBANK [15m/5d] from yfinance
+2026-04-23 20:16:55,572 [INFO] stock_analyzer: Fetched fundamentals for HDFCBANK: PE=0.0, ROE=0.0
+2026-04-23 20:16:57,697 [INFO] stock_analyzer: Sending HDFCBANK to Claude for INTRADAY analysis...
+2026-04-23 20:16:57,700 [WARNING] stock_analyzer: Using fallback analysis for HDFCBANK: Anthropic API credits are unavailable for this run.
+2026-04-23 20:16:58,714 [INFO] stock_analyzer: [4/15] Processing INFY
+2026-04-23 20:16:58,714 [INFO] stock_analyzer: --- Analyzing INFY [INTRADAY] ---
+2026-04-23 20:16:58,714 [INFO] stock_analyzer: Fetching INFY [15m/5d] from yfinance
+2026-04-23 20:17:00,069 [INFO] stock_analyzer: Fetched fundamentals for INFY: PE=0.0, ROE=0.0
+2026-04-23 20:17:02,033 [INFO] stock_analyzer: Sending INFY to Claude for INTRADAY analysis...
+2026-04-23 20:17:02,033 [WARNING] stock_analyzer: Using fallback analysis for INFY: Anthropic API credits are unavailable for this run.
+2026-04-23 20:17:03,051 [INFO] stock_analyzer: [5/15] Processing ICICIBANK
+2026-04-23 20:17:03,053 [INFO] stock_analyzer: --- Analyzing ICICIBANK [INTRADAY] ---
+2026-04-23 20:17:03,065 [INFO] stock_analyzer: Fetching ICICIBANK [15m/5d] from yfinance
+2026-04-23 20:17:04,368 [INFO] stock_analyzer: Fetched fundamentals for ICICIBANK: PE=0.0, ROE=0.0
+2026-04-23 20:17:06,302 [INFO] stock_analyzer: Sending ICICIBANK to Claude for INTRADAY analysis...
+2026-04-23 20:17:06,302 [WARNING] stock_analyzer: Using fallback analysis for ICICIBANK: Anthropic API credits are unavailable for this run.
+2026-04-23 20:17:07,307 [INFO] stock_analyzer: [6/15] Processing SBIN
+2026-04-23 20:17:07,307 [INFO] stock_analyzer: --- Analyzing SBIN [INTRADAY] ---
+2026-04-23 20:17:07,307 [INFO] stock_analyzer: Fetching SBIN [15m/5d] from yfinance
+2026-04-23 20:17:08,553 [INFO] stock_analyzer: Fetched fundamentals for SBIN: PE=0.0, ROE=0.0
+2026-04-23 20:17:10,554 [INFO] stock_analyzer: Sending SBIN to Claude for INTRADAY analysis...
+2026-04-23 20:17:10,556 [WARNING] stock_analyzer: Using fallback analysis for SBIN: Anthropic API credits are unavailable for this run.
+2026-04-23 20:17:11,560 [INFO] stock_analyzer: [7/15] Processing AXISBANK
+2026-04-23 20:17:11,560 [INFO] stock_analyzer: --- Analyzing AXISBANK [INTRADAY] ---
+2026-04-23 20:17:11,560 [INFO] stock_analyzer: Fetching AXISBANK [15m/5d] from yfinance
+2026-04-23 20:17:12,841 [INFO] stock_analyzer: Fetched fundamentals for AXISBANK: PE=0.0, ROE=0.0
+2026-04-23 20:18:36,689 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 20:18:36,689 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-23 20:18:36,691 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:18:36,691 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-23 20:18:36,691 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:18:36,691 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-23 20:18:36,691 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-23 20:18:38,878 [INFO] stock_analyzer: Sending RELIANCE to Claude for INTRADAY analysis...
+2026-04-23 20:18:39,846 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-04-23 20:18:39,848 [ERROR] stock_analyzer: Anthropic API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaLtRKYfMRRmzu81R3GKL'}
+2026-04-23 20:18:39,848 [WARNING] stock_analyzer: Using fallback analysis for RELIANCE: Anthropic API credits are unavailable for this run.
+2026-04-23 20:18:40,862 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-23 20:18:40,862 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-23 20:18:42,648 [INFO] stock_analyzer: Sending TCS to Claude for INTRADAY analysis...
+2026-04-23 20:18:42,648 [WARNING] stock_analyzer: Using fallback analysis for TCS: Anthropic API credits are unavailable for this run.
+2026-04-23 20:18:43,662 [INFO] stock_analyzer: [3/15] Processing HDFCBANK
+2026-04-23 20:18:43,662 [INFO] stock_analyzer: --- Analyzing HDFCBANK [INTRADAY] ---
+2026-04-23 20:18:45,447 [INFO] stock_analyzer: Sending HDFCBANK to Claude for INTRADAY analysis...
+2026-04-23 20:18:45,447 [WARNING] stock_analyzer: Using fallback analysis for HDFCBANK: Anthropic API credits are unavailable for this run.
+2026-04-23 20:18:46,462 [INFO] stock_analyzer: [4/15] Processing INFY
+2026-04-23 20:18:46,462 [INFO] stock_analyzer: --- Analyzing INFY [INTRADAY] ---
+2026-04-23 20:18:48,237 [INFO] stock_analyzer: Sending INFY to Claude for INTRADAY analysis...
+2026-04-23 20:18:48,237 [WARNING] stock_analyzer: Using fallback analysis for INFY: Anthropic API credits are unavailable for this run.
+2026-04-23 20:18:49,245 [INFO] stock_analyzer: [5/15] Processing ICICIBANK
+2026-04-23 20:18:49,245 [INFO] stock_analyzer: --- Analyzing ICICIBANK [INTRADAY] ---
+2026-04-23 20:18:51,105 [INFO] stock_analyzer: Sending ICICIBANK to Claude for INTRADAY analysis...
+2026-04-23 20:18:51,105 [WARNING] stock_analyzer: Using fallback analysis for ICICIBANK: Anthropic API credits are unavailable for this run.
+2026-04-23 20:18:52,120 [INFO] stock_analyzer: [6/15] Processing SBIN
+2026-04-23 20:18:52,120 [INFO] stock_analyzer: --- Analyzing SBIN [INTRADAY] ---
+2026-04-23 20:18:53,865 [INFO] stock_analyzer: Sending SBIN to Claude for INTRADAY analysis...
+2026-04-23 20:18:53,865 [WARNING] stock_analyzer: Using fallback analysis for SBIN: Anthropic API credits are unavailable for this run.
+2026-04-23 20:18:54,871 [INFO] stock_analyzer: [7/15] Processing AXISBANK
+2026-04-23 20:18:54,871 [INFO] stock_analyzer: --- Analyzing AXISBANK [INTRADAY] ---
+2026-04-23 20:20:38,704 [WARNING] stock_analyzer: Claude analysis disabled for this run: Anthropic API credits are unavailable for this run.
+2026-04-23 20:21:30,690 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 20:21:30,690 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-23 20:21:30,690 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:21:30,694 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-23 20:21:30,694 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:21:30,695 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-23 20:21:30,695 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-23 20:21:32,819 [INFO] stock_analyzer: Sending RELIANCE to Claude for INTRADAY analysis...
+2026-04-23 20:21:33,617 [INFO] httpx: HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 400 Bad Request"
+2026-04-23 20:21:33,622 [ERROR] stock_analyzer: Anthropic API error: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CaLte8pc3YWVdcEB7zbnA'}
+2026-04-23 20:21:33,622 [WARNING] stock_analyzer: Using fallback analysis for RELIANCE: Anthropic API credits are unavailable for this run.
+2026-04-23 20:21:34,628 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-23 20:21:34,628 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-23 20:21:36,361 [WARNING] stock_analyzer: Claude analysis disabled for this run: Anthropic API credits are unavailable for this run.
+2026-04-23 20:42:17,652 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 20:42:17,660 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-23 20:42:17,660 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:42:17,660 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-23 20:42:17,660 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:42:17,660 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-23 20:42:17,660 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-23 20:42:17,660 [INFO] stock_analyzer: Fetching RELIANCE [15m/5d] from yfinance
+2026-04-23 20:42:21,465 [INFO] stock_analyzer: Sending RELIANCE to GPT (gpt-5) for INTRADAY analysis...
+2026-04-23 20:42:23,677 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-04-23 20:42:23,693 [INFO] openai._base_client: Retrying request to /responses in 0.421115 seconds
+2026-04-23 20:42:25,106 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-04-23 20:42:25,106 [INFO] openai._base_client: Retrying request to /responses in 0.762221 seconds
+2026-04-23 20:42:26,582 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-04-23 20:42:26,598 [WARNING] stock_analyzer: OpenAI rate limit hit. Waiting 30s before retry 1/3
+2026-04-23 20:42:58,286 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-04-23 20:42:58,286 [INFO] openai._base_client: Retrying request to /responses in 0.403163 seconds
+2026-04-23 20:42:59,768 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-04-23 20:42:59,773 [INFO] openai._base_client: Retrying request to /responses in 0.797211 seconds
+2026-04-23 20:43:01,236 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-04-23 20:43:01,236 [WARNING] stock_analyzer: OpenAI rate limit hit. Waiting 60s before retry 2/3
+2026-04-23 20:46:45,862 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 20:46:45,862 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-23 20:46:45,862 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:46:45,862 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-23 20:46:45,862 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:46:45,862 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-23 20:46:45,862 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-23 20:46:48,460 [INFO] stock_analyzer: Sending RELIANCE to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:46:49,826 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:46:49,826 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:46:49,826 [WARNING] stock_analyzer: Using fallback analysis for RELIANCE: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:46:50,835 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-23 20:46:50,835 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-23 20:46:50,835 [INFO] stock_analyzer: Fetching TCS [15m/5d] from yfinance
+2026-04-23 20:46:53,866 [INFO] stock_analyzer: Sending TCS to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:46:55,408 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:46:55,408 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:46:55,408 [WARNING] stock_analyzer: Using fallback analysis for TCS: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:46:56,424 [INFO] stock_analyzer: [3/15] Processing HDFCBANK
+2026-04-23 20:46:56,424 [INFO] stock_analyzer: --- Analyzing HDFCBANK [INTRADAY] ---
+2026-04-23 20:46:56,426 [INFO] stock_analyzer: Fetching HDFCBANK [15m/5d] from yfinance
+2026-04-23 20:46:58,879 [INFO] stock_analyzer: Sending HDFCBANK to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:46:59,629 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:46:59,629 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:46:59,631 [WARNING] stock_analyzer: Using fallback analysis for HDFCBANK: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:00,638 [INFO] stock_analyzer: [4/15] Processing INFY
+2026-04-23 20:47:00,638 [INFO] stock_analyzer: --- Analyzing INFY [INTRADAY] ---
+2026-04-23 20:47:00,638 [INFO] stock_analyzer: Fetching INFY [15m/5d] from yfinance
+2026-04-23 20:47:03,058 [INFO] stock_analyzer: Sending INFY to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:03,758 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:03,758 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:03,758 [WARNING] stock_analyzer: Using fallback analysis for INFY: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:04,775 [INFO] stock_analyzer: [5/15] Processing ICICIBANK
+2026-04-23 20:47:04,775 [INFO] stock_analyzer: --- Analyzing ICICIBANK [INTRADAY] ---
+2026-04-23 20:47:04,776 [INFO] stock_analyzer: Fetching ICICIBANK [15m/5d] from yfinance
+2026-04-23 20:47:07,230 [INFO] stock_analyzer: Sending ICICIBANK to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:07,929 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:07,929 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:07,932 [WARNING] stock_analyzer: Using fallback analysis for ICICIBANK: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:08,946 [INFO] stock_analyzer: [6/15] Processing SBIN
+2026-04-23 20:47:08,946 [INFO] stock_analyzer: --- Analyzing SBIN [INTRADAY] ---
+2026-04-23 20:47:08,946 [INFO] stock_analyzer: Fetching SBIN [15m/5d] from yfinance
+2026-04-23 20:47:11,338 [INFO] stock_analyzer: Sending SBIN to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:11,989 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:11,991 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:11,991 [WARNING] stock_analyzer: Using fallback analysis for SBIN: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:12,997 [INFO] stock_analyzer: [7/15] Processing AXISBANK
+2026-04-23 20:47:12,997 [INFO] stock_analyzer: --- Analyzing AXISBANK [INTRADAY] ---
+2026-04-23 20:47:12,997 [INFO] stock_analyzer: Fetching AXISBANK [15m/5d] from yfinance
+2026-04-23 20:47:15,543 [INFO] stock_analyzer: Sending AXISBANK to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:16,241 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:16,241 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:16,241 [WARNING] stock_analyzer: Using fallback analysis for AXISBANK: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:17,249 [INFO] stock_analyzer: [8/15] Processing BAJFINANCE
+2026-04-23 20:47:17,249 [INFO] stock_analyzer: --- Analyzing BAJFINANCE [INTRADAY] ---
+2026-04-23 20:47:17,249 [INFO] stock_analyzer: Fetching BAJFINANCE [15m/5d] from yfinance
+2026-04-23 20:47:18,498 [INFO] stock_analyzer: Fetched fundamentals for BAJFINANCE: PE=0.0, ROE=0.0
+2026-04-23 20:47:20,420 [INFO] stock_analyzer: Sending BAJFINANCE to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:21,266 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:21,273 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:21,273 [WARNING] stock_analyzer: Using fallback analysis for BAJFINANCE: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:22,279 [INFO] stock_analyzer: [9/15] Processing WIPRO
+2026-04-23 20:47:22,279 [INFO] stock_analyzer: --- Analyzing WIPRO [INTRADAY] ---
+2026-04-23 20:47:22,279 [INFO] stock_analyzer: Fetching WIPRO [15m/5d] from yfinance
+2026-04-23 20:47:23,525 [INFO] stock_analyzer: Fetched fundamentals for WIPRO: PE=0.0, ROE=0.0
+2026-04-23 20:47:26,377 [INFO] stock_analyzer: Sending WIPRO to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:27,109 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:27,126 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:27,126 [WARNING] stock_analyzer: Using fallback analysis for WIPRO: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:28,142 [INFO] stock_analyzer: [10/15] Processing LT
+2026-04-23 20:47:28,142 [INFO] stock_analyzer: --- Analyzing LT [INTRADAY] ---
+2026-04-23 20:47:28,142 [INFO] stock_analyzer: Fetching LT [15m/5d] from yfinance
+2026-04-23 20:47:29,287 [INFO] stock_analyzer: Fetched fundamentals for LT: PE=0.0, ROE=0.0
+2026-04-23 20:47:31,413 [INFO] stock_analyzer: Sending LT to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:32,033 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:32,033 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:32,033 [WARNING] stock_analyzer: Using fallback analysis for LT: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:33,054 [INFO] stock_analyzer: [11/15] Processing TATAMOTORS
+2026-04-23 20:47:33,054 [INFO] stock_analyzer: --- Analyzing TATAMOTORS [INTRADAY] ---
+2026-04-23 20:47:33,054 [INFO] stock_analyzer: Fetching TATAMOTORS [15m/5d] from yfinance
+2026-04-23 20:47:35,267 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-23 20:47:36,356 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-23 20:47:36,362 [ERROR] yfinance: 
+1 Failed download:
+2026-04-23 20:47:36,362 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-23 20:47:36,363 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-23 20:47:36,363 [WARNING] stock_analyzer: No price data for TATAMOTORS, skipping
+2026-04-23 20:47:37,367 [INFO] stock_analyzer: [12/15] Processing TATASTEEL
+2026-04-23 20:47:37,367 [INFO] stock_analyzer: --- Analyzing TATASTEEL [INTRADAY] ---
+2026-04-23 20:47:37,375 [INFO] stock_analyzer: Fetching TATASTEEL [15m/5d] from yfinance
+2026-04-23 20:47:38,617 [INFO] stock_analyzer: Fetched fundamentals for TATASTEEL: PE=0.0, ROE=0.0
+2026-04-23 20:47:40,726 [INFO] stock_analyzer: Sending TATASTEEL to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:41,413 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:41,413 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:41,413 [WARNING] stock_analyzer: Using fallback analysis for TATASTEEL: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:42,428 [INFO] stock_analyzer: [13/15] Processing MARUTI
+2026-04-23 20:47:42,428 [INFO] stock_analyzer: --- Analyzing MARUTI [INTRADAY] ---
+2026-04-23 20:47:42,428 [INFO] stock_analyzer: Fetching MARUTI [15m/5d] from yfinance
+2026-04-23 20:47:43,799 [INFO] stock_analyzer: Fetched fundamentals for MARUTI: PE=0.0, ROE=0.0
+2026-04-23 20:47:45,843 [INFO] stock_analyzer: Sending MARUTI to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:46,513 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:46,513 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:46,513 [WARNING] stock_analyzer: Using fallback analysis for MARUTI: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:47,522 [INFO] stock_analyzer: [14/15] Processing SUNPHARMA
+2026-04-23 20:47:47,522 [INFO] stock_analyzer: --- Analyzing SUNPHARMA [INTRADAY] ---
+2026-04-23 20:47:47,522 [INFO] stock_analyzer: Fetching SUNPHARMA [15m/5d] from yfinance
+2026-04-23 20:47:48,710 [INFO] stock_analyzer: Fetched fundamentals for SUNPHARMA: PE=0.0, ROE=0.0
+2026-04-23 20:47:50,618 [INFO] stock_analyzer: Sending SUNPHARMA to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:51,444 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:51,444 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:51,444 [WARNING] stock_analyzer: Using fallback analysis for SUNPHARMA: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:52,452 [INFO] stock_analyzer: [15/15] Processing NTPC
+2026-04-23 20:47:52,452 [INFO] stock_analyzer: --- Analyzing NTPC [INTRADAY] ---
+2026-04-23 20:47:52,452 [INFO] stock_analyzer: Fetching NTPC [15m/5d] from yfinance
+2026-04-23 20:47:53,857 [INFO] stock_analyzer: Fetched fundamentals for NTPC: PE=0.0, ROE=0.0
+2026-04-23 20:47:55,791 [INFO] stock_analyzer: Sending NTPC to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-23 20:47:56,466 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:47:56,466 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:56,466 [WARNING] stock_analyzer: Using fallback analysis for NTPC: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:47:57,478 [INFO] stock_analyzer: Scan complete. 0/14 stocks generated actionable signals.
+2026-04-23 20:48:02,479 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:48:02,479 [INFO] stock_analyzer: Starting SWING scan: 10 stocks | Min confidence: 7
+2026-04-23 20:48:02,479 [INFO] stock_analyzer: ============================================================
+2026-04-23 20:48:02,479 [INFO] stock_analyzer: [1/10] Processing ADANIENT
+2026-04-23 20:48:02,479 [INFO] stock_analyzer: --- Analyzing ADANIENT [SWING] ---
+2026-04-23 20:48:02,479 [INFO] stock_analyzer: Fetching ADANIENT [1d/90d] from yfinance
+2026-04-23 20:48:03,557 [INFO] stock_analyzer: Fetched fundamentals for ADANIENT: PE=0.0, ROE=0.0
+2026-04-23 20:48:05,625 [INFO] stock_analyzer: Sending ADANIENT to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:06,399 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:06,399 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:06,400 [WARNING] stock_analyzer: Using fallback analysis for ADANIENT: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:07,403 [INFO] stock_analyzer: [2/10] Processing ADANIPORTS
+2026-04-23 20:48:07,403 [INFO] stock_analyzer: --- Analyzing ADANIPORTS [SWING] ---
+2026-04-23 20:48:07,403 [INFO] stock_analyzer: Fetching ADANIPORTS [1d/90d] from yfinance
+2026-04-23 20:48:08,568 [INFO] stock_analyzer: Fetched fundamentals for ADANIPORTS: PE=0.0, ROE=0.0
+2026-04-23 20:48:10,445 [INFO] stock_analyzer: Sending ADANIPORTS to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:11,203 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:11,203 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:11,203 [WARNING] stock_analyzer: Using fallback analysis for ADANIPORTS: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:12,214 [INFO] stock_analyzer: [3/10] Processing ULTRACEMCO
+2026-04-23 20:48:12,214 [INFO] stock_analyzer: --- Analyzing ULTRACEMCO [SWING] ---
+2026-04-23 20:48:12,215 [INFO] stock_analyzer: Fetching ULTRACEMCO [1d/90d] from yfinance
+2026-04-23 20:48:13,372 [INFO] stock_analyzer: Fetched fundamentals for ULTRACEMCO: PE=0.0, ROE=0.0
+2026-04-23 20:48:15,539 [INFO] stock_analyzer: Sending ULTRACEMCO to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:16,227 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:16,227 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:16,227 [WARNING] stock_analyzer: Using fallback analysis for ULTRACEMCO: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:17,241 [INFO] stock_analyzer: [4/10] Processing NESTLEIND
+2026-04-23 20:48:17,241 [INFO] stock_analyzer: --- Analyzing NESTLEIND [SWING] ---
+2026-04-23 20:48:17,241 [INFO] stock_analyzer: Fetching NESTLEIND [1d/90d] from yfinance
+2026-04-23 20:48:18,554 [INFO] stock_analyzer: Fetched fundamentals for NESTLEIND: PE=0.0, ROE=0.0
+2026-04-23 20:48:20,431 [INFO] stock_analyzer: Sending NESTLEIND to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:21,048 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:21,048 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:21,048 [WARNING] stock_analyzer: Using fallback analysis for NESTLEIND: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:22,086 [INFO] stock_analyzer: [5/10] Processing TITAN
+2026-04-23 20:48:22,086 [INFO] stock_analyzer: --- Analyzing TITAN [SWING] ---
+2026-04-23 20:48:22,086 [INFO] stock_analyzer: Fetching TITAN [1d/90d] from yfinance
+2026-04-23 20:48:23,392 [INFO] stock_analyzer: Fetched fundamentals for TITAN: PE=0.0, ROE=0.0
+2026-04-23 20:48:25,476 [INFO] stock_analyzer: Sending TITAN to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:26,158 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:26,160 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:26,160 [WARNING] stock_analyzer: Using fallback analysis for TITAN: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:27,165 [INFO] stock_analyzer: [6/10] Processing POWERGRID
+2026-04-23 20:48:27,165 [INFO] stock_analyzer: --- Analyzing POWERGRID [SWING] ---
+2026-04-23 20:48:27,165 [INFO] stock_analyzer: Fetching POWERGRID [1d/90d] from yfinance
+2026-04-23 20:48:28,347 [INFO] stock_analyzer: Fetched fundamentals for POWERGRID: PE=0.0, ROE=0.0
+2026-04-23 20:48:30,360 [INFO] stock_analyzer: Sending POWERGRID to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:31,073 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:31,073 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:31,073 [WARNING] stock_analyzer: Using fallback analysis for POWERGRID: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:32,089 [INFO] stock_analyzer: [7/10] Processing ONGC
+2026-04-23 20:48:32,089 [INFO] stock_analyzer: --- Analyzing ONGC [SWING] ---
+2026-04-23 20:48:32,089 [INFO] stock_analyzer: Fetching ONGC [1d/90d] from yfinance
+2026-04-23 20:48:33,341 [INFO] stock_analyzer: Fetched fundamentals for ONGC: PE=0.0, ROE=0.0
+2026-04-23 20:48:35,264 [INFO] stock_analyzer: Sending ONGC to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:36,089 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:36,089 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:36,089 [WARNING] stock_analyzer: Using fallback analysis for ONGC: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:37,104 [INFO] stock_analyzer: [8/10] Processing COALINDIA
+2026-04-23 20:48:37,104 [INFO] stock_analyzer: --- Analyzing COALINDIA [SWING] ---
+2026-04-23 20:48:37,104 [INFO] stock_analyzer: Fetching COALINDIA [1d/90d] from yfinance
+2026-04-23 20:48:38,322 [INFO] stock_analyzer: Fetched fundamentals for COALINDIA: PE=0.0, ROE=0.0
+2026-04-23 20:48:40,241 [INFO] stock_analyzer: Sending COALINDIA to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:40,916 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:40,916 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:40,916 [WARNING] stock_analyzer: Using fallback analysis for COALINDIA: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:41,924 [INFO] stock_analyzer: [9/10] Processing DIVISLAB
+2026-04-23 20:48:41,925 [INFO] stock_analyzer: --- Analyzing DIVISLAB [SWING] ---
+2026-04-23 20:48:41,925 [INFO] stock_analyzer: Fetching DIVISLAB [1d/90d] from yfinance
+2026-04-23 20:48:43,119 [INFO] stock_analyzer: Fetched fundamentals for DIVISLAB: PE=0.0, ROE=0.0
+2026-04-23 20:48:45,039 [INFO] stock_analyzer: Sending DIVISLAB to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:45,626 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:45,626 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:45,626 [WARNING] stock_analyzer: Using fallback analysis for DIVISLAB: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:46,639 [INFO] stock_analyzer: [10/10] Processing DRREDDY
+2026-04-23 20:48:46,639 [INFO] stock_analyzer: --- Analyzing DRREDDY [SWING] ---
+2026-04-23 20:48:46,639 [INFO] stock_analyzer: Fetching DRREDDY [1d/90d] from yfinance
+2026-04-23 20:48:48,070 [INFO] stock_analyzer: Fetched fundamentals for DRREDDY: PE=0.0, ROE=0.0
+2026-04-23 20:48:50,134 [INFO] stock_analyzer: Sending DRREDDY to GPT (gpt-4o-mini) for SWING analysis...
+2026-04-23 20:48:50,858 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 400 Bad Request"
+2026-04-23 20:48:50,858 [ERROR] stock_analyzer: OpenAI bad request error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:50,860 [WARNING] stock_analyzer: Using fallback analysis for DRREDDY: Error code: 400 - {'error': {'message': "Unsupported parameter: 'reasoning.effort' is not supported with this model.", 'type': 'invalid_request_error', 'param': 'reasoning.effort', 'code': 'unsupported_parameter'}}
+2026-04-23 20:48:51,894 [INFO] stock_analyzer: Scan complete. 0/10 stocks generated actionable signals.
+2026-04-23 20:49:27,830 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 21:00:24,584 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 21:00:38,970 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 21:08:45,490 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-23 21:12:54,233 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-24 08:14:01,631 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-24 09:30:07,907 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-24 09:39:48,687 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db

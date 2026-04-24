@@ -1,0 +1,21 @@
+{
+  "intraday": [
+    "RELIANCE", "TCS", "HDFCBANK", "INFY", "ICICIBANK",
+    "SBIN", "AXISBANK", "BAJFINANCE", "WIPRO", "LT",
+    "TATAMOTORS", "TATASTEEL", "MARUTI", "SUNPHARMA", "NTPC"
+  ],
+  "swing": [
+    "ADANIENT", "ADANIPORTS", "ULTRACEMCO", "NESTLEIND", "TITAN",
+    "POWERGRID", "ONGC", "COALINDIA", "DIVISLAB", "DRREDDY"
+  ],
+  "settings": {
+    "min_confidence": 7,
+    "min_volume_ratio": 1.2,
+    "account_size": 500000,
+    "intraday_risk_per_trade_pct": 1.0,
+    "swing_risk_per_trade_pct": 2.0,
+    "atr_sl_multiplier": 1.5,
+    "rr_ratio_min": 1.5,
+    "top_n_setups": 5
+  }
+}

@@ -20,7 +20,7 @@ from config import load_watchlist
 
 try:
     import pyarrow  # noqa: F401
-    HAS_PYARROW = True
+    HAS_PYARROW = not getattr(pyarrow, "__codex_stub__", False) and hasattr(pyarrow, "Table")
 except Exception:
     HAS_PYARROW = False
 
@@ -54,7 +54,7 @@ init_db()
 def render_dataframe(df: pd.DataFrame):
     """Render a dataframe without hard-failing when pyarrow is blocked."""
     if HAS_PYARROW:
-        st.dataframe(df, use_container_width=True)
+        st.dataframe(df, width="stretch")
         return
 
     st.caption("Interactive table disabled because pyarrow is blocked on this machine.")
@@ -75,14 +75,14 @@ def signal_color(sig: str) -> str:
 st.sidebar.title("📈 Stock Analyzer")
 st.sidebar.caption(f"Last refreshed: {datetime.now().strftime('%H:%M:%S')}")
 
-if st.sidebar.button("🔄 Refresh Signals", use_container_width=True):
+if st.sidebar.button("🔄 Refresh Signals", width="stretch"):
     st.rerun()
 
 # Run scan button
 st.sidebar.markdown("---")
 st.sidebar.subheader("Run a Scan")
-st.sidebar.caption("This will fetch data and call GPT for your watchlist.")
-if st.sidebar.button("▶ Run Full Scan Now", use_container_width=True, type="primary"):
+st.sidebar.caption("This will fetch data and call Gemini for your watchlist.")
+if st.sidebar.button("▶ Run Full Scan Now", width="stretch", type="primary"):
     with st.spinner("Running scan... this may take a few minutes"):
         import subprocess
         result = subprocess.run(

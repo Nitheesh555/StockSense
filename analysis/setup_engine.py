@@ -1,6 +1,6 @@
 """
 analysis/setup_engine.py - Rule-based setup classification and next-session outlook.
-These rules give GPT structured context and provide safe fallback fields.
+These rules give Gemini structured context and provide safe fallback fields.
 """
 
 from analysis.signals import conviction_label

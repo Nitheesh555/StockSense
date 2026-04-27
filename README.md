@@ -1,6 +1,6 @@
 # NSE Trading Intelligence System
 
-AI-assisted trading intelligence for NSE-listed Indian stocks. The system scans a TradingView-style watchlist, fetches multi-timeframe market data, computes technical setups, asks OpenAI GPT for structured analysis, and produces a Top 5 trade intelligence report for intraday, swing, and next-session planning.
+AI-assisted trading intelligence for NSE-listed Indian stocks. The system scans a TradingView-style watchlist, fetches multi-timeframe market data, computes technical setups, asks Gemini for structured analysis, and produces a Top 5 trade intelligence report for intraday, swing, and next-session planning.
 
 This tool is for educational and research use only. It is not financial advice.
 
@@ -15,7 +15,7 @@ This tool is for educational and research use only. It is not financial advice.
   - Next session: bullish/bearish/neutral bias, confidence %, gap probability, and levels to watch.
 - Adds best-effort market context for Nifty 50, Bank Nifty, India VIX, sector strength, FII/DII availability, and expiry awareness.
 - Applies risk management with configurable account size, 1-2% risk, ATR stops, quantity sizing, R:R filtering, and high-volatility flags.
-- Uses the existing OpenAI GPT integration only. There is no Claude/Anthropic API dependency.
+- Uses Gemini API structured output for trade analysis.
 - Saves signals and final intelligence reports to SQLite and `output/reports/`.
 - Shows Top 5 setups in Streamlit and optionally sends Telegram alerts.
 
@@ -24,7 +24,7 @@ This tool is for educational and research use only. It is not financial advice.
 ### 1. Prerequisites
 
 - Python 3.10 or higher
-- An OpenAI API key from https://platform.openai.com/api-keys
+- A Gemini API key from https://ai.google.dev/
 
 ### 2. Setup
 
@@ -47,11 +47,11 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
-Add your OpenAI key:
+Add your Gemini key:
 
 ```env
-OPENAI_API_KEY=sk-...
-OPENAI_MODEL=gpt-4o-mini
+GEMINI_API_KEY=your_gemini_api_key_here
+GEMINI_MODEL=gemini-2.5-flash
 ```
 
 Telegram is optional:
@@ -166,7 +166,7 @@ stock_analyzer/
 ├── context/
 │   └── market_context.py    # Best-effort index/VIX/sector context
 ├── ai/
-│   ├── ai_engine.py         # OpenAI GPT structured output
+│   ├── ai_engine.py         # Gemini structured output
 │   └── prompt_builder.py    # Trading intelligence prompts
 └── output/
     ├── dashboard.py         # Streamlit Top 5 dashboard
@@ -177,8 +177,8 @@ stock_analyzer/
 
 ## Troubleshooting
 
-**`OPENAI_API_KEY not set`**  
-Copy `.env.example` to `.env` and add your OpenAI API key.
+**`GEMINI_API_KEY not set`**  
+Copy `.env.example` to `.env` and add your Gemini API key.
 
 **No data returned for a symbol**  
 Use base NSE symbols such as `RELIANCE`, not `RELIANCE.NS`. The app appends `.NS` automatically for equities.

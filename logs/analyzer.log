@@ -614,3 +614,678 @@
 2026-04-24 08:14:01,631 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
 2026-04-24 09:30:07,907 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
 2026-04-24 09:39:48,687 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-24 10:11:11,840 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-24 10:11:11,840 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-24 10:11:11,840 [INFO] stock_analyzer: Fetching ^NSEI [1d/3mo] from yfinance
+2026-04-24 10:11:12,962 [INFO] stock_analyzer: Fetching ^NSEBANK [1d/3mo] from yfinance
+2026-04-24 10:11:13,504 [INFO] stock_analyzer: Fetching ^INDIAVIX [1d/3mo] from yfinance
+2026-04-24 10:11:14,169 [INFO] stock_analyzer: ============================================================
+2026-04-24 10:11:14,169 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-24 10:11:14,169 [INFO] stock_analyzer: ============================================================
+2026-04-24 10:11:14,169 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-24 10:11:14,169 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-24 10:11:14,169 [INFO] stock_analyzer: Fetching RELIANCE [5m/5d] from yfinance
+2026-04-24 10:11:14,687 [INFO] stock_analyzer: Fetching RELIANCE [1h/60d] from yfinance
+2026-04-24 10:11:15,178 [INFO] stock_analyzer: Fetching RELIANCE [1d/1y] from yfinance
+2026-04-24 10:11:17,757 [INFO] stock_analyzer: Sending RELIANCE to GPT (gpt-4o-mini) for INTRADAY analysis...
+2026-04-24 10:11:24,256 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 429 Too Many Requests"
+2026-04-24 10:11:24,258 [WARNING] stock_analyzer: OpenAI rate limit hit: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2026-04-24 10:11:24,258 [WARNING] stock_analyzer: Using fallback analysis for RELIANCE: OpenAI rate limit reached for this run.
+2026-04-24 10:11:25,264 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-24 10:11:25,264 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-24 10:11:25,264 [INFO] stock_analyzer: Fetching TCS [5m/5d] from yfinance
+2026-04-24 10:11:25,750 [INFO] stock_analyzer: Fetching TCS [1h/60d] from yfinance
+2026-04-24 10:11:26,477 [INFO] stock_analyzer: Fetching TCS [1d/1y] from yfinance
+2026-04-24 10:11:29,467 [WARNING] stock_analyzer: GPT analysis disabled for this run: OpenAI rate limit reached for this run.
+2026-04-24 10:11:30,473 [INFO] stock_analyzer: [3/15] Processing HDFCBANK
+2026-04-24 10:11:30,473 [INFO] stock_analyzer: --- Analyzing HDFCBANK [INTRADAY] ---
+2026-04-24 10:11:30,474 [INFO] stock_analyzer: Fetching HDFCBANK [5m/5d] from yfinance
+2026-04-24 10:11:30,993 [INFO] stock_analyzer: Fetching HDFCBANK [1h/60d] from yfinance
+2026-04-24 10:11:31,586 [INFO] stock_analyzer: Fetching HDFCBANK [1d/1y] from yfinance
+2026-04-24 10:11:35,180 [INFO] stock_analyzer: [4/15] Processing INFY
+2026-04-24 10:11:35,180 [INFO] stock_analyzer: --- Analyzing INFY [INTRADAY] ---
+2026-04-24 10:11:35,180 [INFO] stock_analyzer: Fetching INFY [5m/5d] from yfinance
+2026-04-24 10:11:35,678 [INFO] stock_analyzer: Fetching INFY [1h/60d] from yfinance
+2026-04-24 10:11:36,211 [INFO] stock_analyzer: Fetching INFY [1d/1y] from yfinance
+2026-04-24 10:11:40,029 [INFO] stock_analyzer: [5/15] Processing ICICIBANK
+2026-04-24 10:11:40,029 [INFO] stock_analyzer: --- Analyzing ICICIBANK [INTRADAY] ---
+2026-04-24 10:11:40,030 [INFO] stock_analyzer: Fetching ICICIBANK [5m/5d] from yfinance
+2026-04-24 10:11:40,506 [INFO] stock_analyzer: Fetching ICICIBANK [1h/60d] from yfinance
+2026-04-24 10:11:41,147 [INFO] stock_analyzer: Fetching ICICIBANK [1d/1y] from yfinance
+2026-04-24 10:11:44,769 [INFO] stock_analyzer: [6/15] Processing SBIN
+2026-04-24 10:11:44,769 [INFO] stock_analyzer: --- Analyzing SBIN [INTRADAY] ---
+2026-04-24 10:11:44,769 [INFO] stock_analyzer: Fetching SBIN [5m/5d] from yfinance
+2026-04-24 10:11:45,324 [INFO] stock_analyzer: Fetching SBIN [1h/60d] from yfinance
+2026-04-24 10:11:45,814 [INFO] stock_analyzer: Fetching SBIN [1d/1y] from yfinance
+2026-04-24 10:11:50,259 [INFO] stock_analyzer: [7/15] Processing AXISBANK
+2026-04-24 10:11:50,259 [INFO] stock_analyzer: --- Analyzing AXISBANK [INTRADAY] ---
+2026-04-24 10:11:50,259 [INFO] stock_analyzer: Fetching AXISBANK [5m/5d] from yfinance
+2026-04-24 10:11:50,842 [INFO] stock_analyzer: Fetching AXISBANK [1h/60d] from yfinance
+2026-04-24 10:11:51,399 [INFO] stock_analyzer: Fetching AXISBANK [1d/1y] from yfinance
+2026-04-24 10:11:55,358 [INFO] stock_analyzer: [8/15] Processing BAJFINANCE
+2026-04-24 10:11:55,358 [INFO] stock_analyzer: --- Analyzing BAJFINANCE [INTRADAY] ---
+2026-04-24 10:11:55,358 [INFO] stock_analyzer: Fetching BAJFINANCE [5m/5d] from yfinance
+2026-04-24 10:11:55,857 [INFO] stock_analyzer: Fetching BAJFINANCE [1h/60d] from yfinance
+2026-04-24 10:11:56,330 [INFO] stock_analyzer: Fetching BAJFINANCE [1d/1y] from yfinance
+2026-04-24 10:12:00,425 [INFO] stock_analyzer: [9/15] Processing WIPRO
+2026-04-24 10:12:00,425 [INFO] stock_analyzer: --- Analyzing WIPRO [INTRADAY] ---
+2026-04-24 10:12:00,425 [INFO] stock_analyzer: Fetching WIPRO [5m/5d] from yfinance
+2026-04-24 10:12:00,967 [INFO] stock_analyzer: Fetching WIPRO [1h/60d] from yfinance
+2026-04-24 10:12:01,483 [INFO] stock_analyzer: Fetching WIPRO [1d/1y] from yfinance
+2026-04-24 10:12:04,778 [INFO] stock_analyzer: [10/15] Processing LT
+2026-04-24 10:12:04,778 [INFO] stock_analyzer: --- Analyzing LT [INTRADAY] ---
+2026-04-24 10:12:04,778 [INFO] stock_analyzer: Fetching LT [5m/5d] from yfinance
+2026-04-24 10:12:05,269 [INFO] stock_analyzer: Fetching LT [1h/60d] from yfinance
+2026-04-24 10:12:05,768 [INFO] stock_analyzer: Fetching LT [1d/1y] from yfinance
+2026-04-24 10:12:09,497 [INFO] stock_analyzer: [11/15] Processing TATAMOTORS
+2026-04-24 10:12:09,497 [INFO] stock_analyzer: --- Analyzing TATAMOTORS [INTRADAY] ---
+2026-04-24 10:12:09,497 [INFO] stock_analyzer: Fetching TATAMOTORS [5m/5d] from yfinance
+2026-04-24 10:12:10,816 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-24 10:12:11,483 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-24 10:12:11,493 [ERROR] yfinance: 
+1 Failed download:
+2026-04-24 10:12:11,493 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-24 10:12:11,493 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-24 10:12:11,493 [INFO] stock_analyzer: Fetching TATAMOTORS [1h/60d] from yfinance
+2026-04-24 10:12:12,203 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-24 10:12:13,094 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=60d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-24 10:12:13,104 [ERROR] yfinance: 
+1 Failed download:
+2026-04-24 10:12:13,104 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=60d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-24 10:12:13,106 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-24 10:12:13,106 [INFO] stock_analyzer: Fetching TATAMOTORS [1d/1y] from yfinance
+2026-04-24 10:12:13,788 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-24 10:12:13,794 [ERROR] yfinance: 
+1 Failed download:
+2026-04-24 10:12:13,794 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-24 10:12:13,797 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-24 10:12:13,798 [WARNING] stock_analyzer: No price data for TATAMOTORS, skipping
+2026-04-24 10:12:14,799 [INFO] stock_analyzer: [12/15] Processing TATASTEEL
+2026-04-24 10:12:14,799 [INFO] stock_analyzer: --- Analyzing TATASTEEL [INTRADAY] ---
+2026-04-24 10:12:14,799 [INFO] stock_analyzer: Fetching TATASTEEL [5m/5d] from yfinance
+2026-04-24 10:12:15,298 [INFO] stock_analyzer: Fetching TATASTEEL [1h/60d] from yfinance
+2026-04-24 10:12:15,811 [INFO] stock_analyzer: Fetching TATASTEEL [1d/1y] from yfinance
+2026-04-24 10:12:20,157 [INFO] stock_analyzer: [13/15] Processing MARUTI
+2026-04-24 10:12:20,157 [INFO] stock_analyzer: --- Analyzing MARUTI [INTRADAY] ---
+2026-04-24 10:12:20,157 [INFO] stock_analyzer: Fetching MARUTI [5m/5d] from yfinance
+2026-04-24 10:12:20,665 [INFO] stock_analyzer: Fetching MARUTI [1h/60d] from yfinance
+2026-04-24 10:12:21,176 [INFO] stock_analyzer: Fetching MARUTI [1d/1y] from yfinance
+2026-04-24 10:12:25,557 [INFO] stock_analyzer: [14/15] Processing SUNPHARMA
+2026-04-24 10:12:25,559 [INFO] stock_analyzer: --- Analyzing SUNPHARMA [INTRADAY] ---
+2026-04-24 10:12:25,560 [INFO] stock_analyzer: Fetching SUNPHARMA [5m/5d] from yfinance
+2026-04-24 10:12:26,059 [INFO] stock_analyzer: Fetching SUNPHARMA [1h/60d] from yfinance
+2026-04-24 10:12:26,562 [INFO] stock_analyzer: Fetching SUNPHARMA [1d/1y] from yfinance
+2026-04-24 10:12:31,141 [INFO] stock_analyzer: [15/15] Processing NTPC
+2026-04-24 10:12:31,141 [INFO] stock_analyzer: --- Analyzing NTPC [INTRADAY] ---
+2026-04-24 10:12:31,141 [INFO] stock_analyzer: Fetching NTPC [5m/5d] from yfinance
+2026-04-24 10:12:31,649 [INFO] stock_analyzer: Fetching NTPC [1h/60d] from yfinance
+2026-04-24 10:12:32,166 [INFO] stock_analyzer: Fetching NTPC [1d/1y] from yfinance
+2026-04-24 10:12:36,269 [INFO] stock_analyzer: Scan complete. 0/14 stocks generated actionable signals.
+2026-04-24 10:12:41,270 [INFO] stock_analyzer: ============================================================
+2026-04-24 10:12:41,270 [INFO] stock_analyzer: Starting SWING scan: 10 stocks | Min confidence: 7
+2026-04-24 10:12:41,270 [INFO] stock_analyzer: ============================================================
+2026-04-24 10:12:41,270 [INFO] stock_analyzer: [1/10] Processing ADANIENT
+2026-04-24 10:12:41,272 [INFO] stock_analyzer: --- Analyzing ADANIENT [SWING] ---
+2026-04-24 10:12:41,272 [INFO] stock_analyzer: Fetching ADANIENT [5m/5d] from yfinance
+2026-04-24 10:12:41,783 [INFO] stock_analyzer: Fetching ADANIENT [1h/60d] from yfinance
+2026-04-24 10:12:42,281 [INFO] stock_analyzer: Fetching ADANIENT [1d/1y] from yfinance
+2026-04-24 10:12:46,035 [INFO] stock_analyzer: [2/10] Processing ADANIPORTS
+2026-04-24 10:12:46,035 [INFO] stock_analyzer: --- Analyzing ADANIPORTS [SWING] ---
+2026-04-24 10:12:46,035 [INFO] stock_analyzer: Fetching ADANIPORTS [5m/5d] from yfinance
+2026-04-24 10:12:46,533 [INFO] stock_analyzer: Fetching ADANIPORTS [1h/60d] from yfinance
+2026-04-24 10:12:47,048 [INFO] stock_analyzer: Fetching ADANIPORTS [1d/1y] from yfinance
+2026-04-24 10:12:51,652 [INFO] stock_analyzer: [3/10] Processing ULTRACEMCO
+2026-04-24 10:12:51,652 [INFO] stock_analyzer: --- Analyzing ULTRACEMCO [SWING] ---
+2026-04-24 10:12:51,652 [INFO] stock_analyzer: Fetching ULTRACEMCO [5m/5d] from yfinance
+2026-04-24 10:12:52,156 [INFO] stock_analyzer: Fetching ULTRACEMCO [1h/60d] from yfinance
+2026-04-24 10:12:52,660 [INFO] stock_analyzer: Fetching ULTRACEMCO [1d/1y] from yfinance
+2026-04-24 10:12:56,279 [INFO] stock_analyzer: [4/10] Processing NESTLEIND
+2026-04-24 10:12:56,279 [INFO] stock_analyzer: --- Analyzing NESTLEIND [SWING] ---
+2026-04-24 10:12:56,279 [INFO] stock_analyzer: Fetching NESTLEIND [5m/5d] from yfinance
+2026-04-24 10:12:56,768 [INFO] stock_analyzer: Fetching NESTLEIND [1h/60d] from yfinance
+2026-04-24 10:12:57,258 [INFO] stock_analyzer: Fetching NESTLEIND [1d/1y] from yfinance
+2026-04-24 10:13:01,676 [INFO] stock_analyzer: [5/10] Processing TITAN
+2026-04-24 10:13:01,676 [INFO] stock_analyzer: --- Analyzing TITAN [SWING] ---
+2026-04-24 10:13:01,676 [INFO] stock_analyzer: Fetching TITAN [5m/5d] from yfinance
+2026-04-24 10:13:02,176 [INFO] stock_analyzer: Fetching TITAN [1h/60d] from yfinance
+2026-04-24 10:13:02,825 [INFO] stock_analyzer: Fetching TITAN [1d/1y] from yfinance
+2026-04-24 10:13:06,335 [INFO] stock_analyzer: [6/10] Processing POWERGRID
+2026-04-24 10:13:06,335 [INFO] stock_analyzer: --- Analyzing POWERGRID [SWING] ---
+2026-04-24 10:13:06,335 [INFO] stock_analyzer: Fetching POWERGRID [5m/5d] from yfinance
+2026-04-24 10:13:06,893 [INFO] stock_analyzer: Fetching POWERGRID [1h/60d] from yfinance
+2026-04-24 10:13:07,375 [INFO] stock_analyzer: Fetching POWERGRID [1d/1y] from yfinance
+2026-04-24 10:13:10,854 [INFO] stock_analyzer: [7/10] Processing ONGC
+2026-04-24 10:13:10,854 [INFO] stock_analyzer: --- Analyzing ONGC [SWING] ---
+2026-04-24 10:13:10,854 [INFO] stock_analyzer: Fetching ONGC [5m/5d] from yfinance
+2026-04-24 10:13:11,422 [INFO] stock_analyzer: Fetching ONGC [1h/60d] from yfinance
+2026-04-24 10:13:11,941 [INFO] stock_analyzer: Fetching ONGC [1d/1y] from yfinance
+2026-04-24 10:13:16,539 [INFO] stock_analyzer: [8/10] Processing COALINDIA
+2026-04-24 10:13:16,539 [INFO] stock_analyzer: --- Analyzing COALINDIA [SWING] ---
+2026-04-24 10:13:16,541 [INFO] stock_analyzer: Fetching COALINDIA [5m/5d] from yfinance
+2026-04-24 10:13:17,151 [INFO] stock_analyzer: Fetching COALINDIA [1h/60d] from yfinance
+2026-04-24 10:13:17,869 [INFO] stock_analyzer: Fetching COALINDIA [1d/1y] from yfinance
+2026-04-24 10:13:24,213 [INFO] stock_analyzer: [9/10] Processing DIVISLAB
+2026-04-24 10:13:24,213 [INFO] stock_analyzer: --- Analyzing DIVISLAB [SWING] ---
+2026-04-24 10:13:24,213 [INFO] stock_analyzer: Fetching DIVISLAB [5m/5d] from yfinance
+2026-04-24 10:13:24,748 [INFO] stock_analyzer: Fetching DIVISLAB [1h/60d] from yfinance
+2026-04-24 10:13:25,366 [INFO] stock_analyzer: Fetching DIVISLAB [1d/1y] from yfinance
+2026-04-24 10:13:29,151 [INFO] stock_analyzer: [10/10] Processing DRREDDY
+2026-04-24 10:13:29,151 [INFO] stock_analyzer: --- Analyzing DRREDDY [SWING] ---
+2026-04-24 10:13:29,151 [INFO] stock_analyzer: Fetching DRREDDY [5m/5d] from yfinance
+2026-04-24 10:13:29,741 [INFO] stock_analyzer: Fetching DRREDDY [1h/60d] from yfinance
+2026-04-24 10:13:30,226 [INFO] stock_analyzer: Fetching DRREDDY [1d/1y] from yfinance
+2026-04-24 10:13:34,725 [INFO] stock_analyzer: Scan complete. 0/10 stocks generated actionable signals.
+2026-04-24 10:13:34,729 [INFO] stock_analyzer: Saved intelligence report to D:\Projects\Stock Analysis\stock_analyzer\output\reports\trade_intelligence_20260424_101334.md
+2026-04-24 10:13:34,729 [INFO] stock_analyzer: 
+# Trade Intelligence Report - 24-Apr-2026 10:13 IST
+Market Pulse: Nifty sideways -0.75% | VIX 19.23 | FII/DII unavailable
+
+## Intraday Setups (Valid till 3:15 PM IST)
+No qualifying setups.
+
+## Swing Setups (3-10 Days)
+No qualifying setups.
+
+## Next Session Outlook
+RELIANCE: Neutral (0%) - Watch support Rs 1337.23, resistance Rs 1338.83
+TCS: Neutral (0%) - Watch support Rs 2454.80, resistance Rs 2462.70
+HDFCBANK: Neutral (0%) - Watch support Rs 779.42, resistance Rs 780.32
+INFY: Neutral (0%) - Watch support Rs 1187.33, resistance Rs 1191.83
+ICICIBANK: Neutral (0%) - Watch support Rs 1335.83, resistance Rs 1336.83
+
+Disclaimer: Educational and research use only. Validate every setup before trading.
+2026-04-24 10:13:34,731 [INFO] stock_analyzer: Top intelligence report saved: D:\Projects\Stock Analysis\stock_analyzer\output\reports\trade_intelligence_20260424_101334.md
+2026-04-24 10:13:50,434 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 09:29:35,948 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 09:29:39,971 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 09:29:42,034 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 10:46:08,816 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 10:46:08,816 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-27 10:46:08,816 [INFO] stock_analyzer: Fetching ^NSEI [1d/3mo] from yfinance
+2026-04-27 10:46:11,492 [INFO] stock_analyzer: Fetching ^NSEBANK [1d/3mo] from yfinance
+2026-04-27 10:46:12,379 [INFO] stock_analyzer: Fetching ^INDIAVIX [1d/3mo] from yfinance
+2026-04-27 10:46:13,006 [INFO] stock_analyzer: ============================================================
+2026-04-27 10:46:13,007 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-27 10:46:13,007 [INFO] stock_analyzer: ============================================================
+2026-04-27 10:46:13,008 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-27 10:46:13,009 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-27 10:46:13,014 [INFO] stock_analyzer: Fetching RELIANCE [5m/5d] from yfinance
+2026-04-27 10:46:13,668 [INFO] stock_analyzer: Fetching RELIANCE [1h/60d] from yfinance
+2026-04-27 10:46:14,460 [INFO] stock_analyzer: Fetching RELIANCE [1d/1y] from yfinance
+2026-04-27 10:46:16,159 [INFO] stock_analyzer: Fetched fundamentals for RELIANCE: PE=0.0, ROE=0.0
+2026-04-27 10:46:18,342 [INFO] stock_analyzer: Sending RELIANCE to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 10:46:24,247 [ERROR] stock_analyzer: JSON parse error for RELIANCE: Unterminated string starting at: line 3 column 13 (char 38) | Raw: {
+  "symbol": "RELIANCE",
+  "signal": "SELL
+2026-04-27 10:46:24,247 [INFO] stock_analyzer: RELIANCE -> AVOID | Confidence: 0/10 | Entry: None | Target: None | SL: None
+2026-04-27 10:46:26,771 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-27 10:46:26,771 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-27 10:46:26,773 [INFO] stock_analyzer: Fetching TCS [5m/5d] from yfinance
+2026-04-27 10:46:27,559 [INFO] stock_analyzer: Fetching TCS [1h/60d] from yfinance
+2026-04-27 10:46:28,366 [INFO] stock_analyzer: Fetching TCS [1d/1y] from yfinance
+2026-04-27 10:46:29,956 [INFO] stock_analyzer: Fetched fundamentals for TCS: PE=0.0, ROE=0.0
+2026-04-27 10:46:32,060 [INFO] stock_analyzer: Sending TCS to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 10:46:37,767 [ERROR] stock_analyzer: JSON parse error for TCS: Unterminated string starting at: line 3 column 13 (char 33) | Raw: {
+  "symbol": "TCS",
+  "signal": "AVOID
+2026-04-27 10:46:37,769 [INFO] stock_analyzer: TCS -> AVOID | Confidence: 0/10 | Entry: None | Target: None | SL: None
+2026-04-27 10:46:40,289 [INFO] stock_analyzer: [3/15] Processing HDFCBANK
+2026-04-27 10:46:40,289 [INFO] stock_analyzer: --- Analyzing HDFCBANK [INTRADAY] ---
+2026-04-27 10:46:40,291 [INFO] stock_analyzer: Fetching HDFCBANK [5m/5d] from yfinance
+2026-04-27 10:46:41,171 [INFO] stock_analyzer: Fetching HDFCBANK [1h/60d] from yfinance
+2026-04-27 10:46:42,057 [INFO] stock_analyzer: Fetching HDFCBANK [1d/1y] from yfinance
+2026-04-27 10:46:43,617 [INFO] stock_analyzer: Fetched fundamentals for HDFCBANK: PE=0.0, ROE=0.0
+2026-04-27 10:46:45,778 [INFO] stock_analyzer: Sending HDFCBANK to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 10:46:51,592 [ERROR] stock_analyzer: JSON parse error for HDFCBANK: Expecting value: line 3 column 12 (char 37) | Raw: {
+  "symbol": "HDFCBANK",
+  "signal":
+2026-04-27 10:46:51,592 [INFO] stock_analyzer: HDFCBANK -> AVOID | Confidence: 0/10 | Entry: None | Target: None | SL: None
+2026-04-27 10:46:54,117 [INFO] stock_analyzer: [4/15] Processing INFY
+2026-04-27 10:46:54,117 [INFO] stock_analyzer: --- Analyzing INFY [INTRADAY] ---
+2026-04-27 10:46:54,121 [INFO] stock_analyzer: Fetching INFY [5m/5d] from yfinance
+2026-04-27 10:46:55,063 [INFO] stock_analyzer: Fetching INFY [1h/60d] from yfinance
+2026-04-27 10:46:55,852 [INFO] stock_analyzer: Fetching INFY [1d/1y] from yfinance
+2026-04-27 10:46:57,395 [INFO] stock_analyzer: Fetched fundamentals for INFY: PE=0.0, ROE=0.0
+2026-04-27 10:46:59,526 [INFO] stock_analyzer: Sending INFY to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 10:47:06,699 [ERROR] stock_analyzer: JSON parse error for INFY: Expecting property name enclosed in double quotes: line 3 column 21 (char 42) | Raw: {
+  "symbol": "INFY",
+  "signal": "AVOID",
+2026-04-27 10:47:06,699 [INFO] stock_analyzer: INFY -> AVOID | Confidence: 0/10 | Entry: None | Target: None | SL: None
+2026-04-27 10:47:09,219 [INFO] stock_analyzer: [5/15] Processing ICICIBANK
+2026-04-27 10:47:09,219 [INFO] stock_analyzer: --- Analyzing ICICIBANK [INTRADAY] ---
+2026-04-27 10:47:09,223 [INFO] stock_analyzer: Fetching ICICIBANK [5m/5d] from yfinance
+2026-04-27 10:47:10,102 [INFO] stock_analyzer: Fetching ICICIBANK [1h/60d] from yfinance
+2026-04-27 10:47:10,886 [INFO] stock_analyzer: Fetching ICICIBANK [1d/1y] from yfinance
+2026-04-27 10:47:13,236 [INFO] stock_analyzer: Fetched fundamentals for ICICIBANK: PE=0.0, ROE=0.0
+2026-04-27 10:47:16,280 [INFO] stock_analyzer: Sending ICICIBANK to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 10:47:19,850 [ERROR] stock_analyzer: Gemini API error 503: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-27 10:47:19,850 [WARNING] stock_analyzer: Using fallback analysis for ICICIBANK: Gemini API request failed: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-27 10:47:20,876 [INFO] stock_analyzer: [6/15] Processing SBIN
+2026-04-27 10:47:20,876 [INFO] stock_analyzer: --- Analyzing SBIN [INTRADAY] ---
+2026-04-27 10:47:20,876 [INFO] stock_analyzer: Fetching SBIN [5m/5d] from yfinance
+2026-04-27 10:47:21,896 [INFO] stock_analyzer: Fetching SBIN [1h/60d] from yfinance
+2026-04-27 10:47:22,793 [INFO] stock_analyzer: Fetching SBIN [1d/1y] from yfinance
+2026-04-27 10:47:25,193 [INFO] stock_analyzer: Fetched fundamentals for SBIN: PE=0.0, ROE=0.0
+2026-04-27 10:47:28,581 [WARNING] stock_analyzer: Gemini analysis disabled for this run: Gemini API request failed: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.
+2026-04-27 10:47:29,613 [INFO] stock_analyzer: [7/15] Processing AXISBANK
+2026-04-27 10:47:29,614 [INFO] stock_analyzer: --- Analyzing AXISBANK [INTRADAY] ---
+2026-04-27 10:47:29,620 [INFO] stock_analyzer: Fetching AXISBANK [5m/5d] from yfinance
+2026-04-27 10:47:30,452 [INFO] stock_analyzer: Fetching AXISBANK [1h/60d] from yfinance
+2026-04-27 10:47:31,139 [INFO] stock_analyzer: Fetching AXISBANK [1d/1y] from yfinance
+2026-04-27 10:47:32,823 [INFO] stock_analyzer: Fetched fundamentals for AXISBANK: PE=0.0, ROE=0.0
+2026-04-27 10:47:36,401 [INFO] stock_analyzer: [8/15] Processing BAJFINANCE
+2026-04-27 10:47:36,401 [INFO] stock_analyzer: --- Analyzing BAJFINANCE [INTRADAY] ---
+2026-04-27 10:47:36,405 [INFO] stock_analyzer: Fetching BAJFINANCE [5m/5d] from yfinance
+2026-04-27 10:47:37,490 [INFO] stock_analyzer: Fetching BAJFINANCE [1h/60d] from yfinance
+2026-04-27 10:47:39,301 [INFO] stock_analyzer: Fetching BAJFINANCE [1d/1y] from yfinance
+2026-04-27 10:47:41,207 [INFO] stock_analyzer: Fetched fundamentals for BAJFINANCE: PE=0.0, ROE=0.0
+2026-04-27 10:48:00,696 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 10:52:31,012 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 10:52:31,012 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-27 10:52:33,242 [INFO] stock_analyzer: Sending RELIANCE to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 10:52:38,621 [WARNING] stock_analyzer: Gemini output hit MAX_TOKENS at 800 tokens; retrying with a larger limit.
+2026-04-27 10:52:48,350 [ERROR] stock_analyzer: JSON parse error for RELIANCE: Expecting property name enclosed in double quotes: line 6 column 34 (char 126) | Raw: {
+  "symbol": "RELIANCE",
+  "signal": "SELL",
+  "trade_type": "INTRADAY",
+  "confidence": 6,
+  "setup_type": "VWAP Rejection",
+2026-04-27 10:52:48,352 [INFO] stock_analyzer: RELIANCE -> AVOID | Confidence: 0/10 | Entry: None | Target: None | SL: None
+2026-04-27 10:53:19,117 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 10:53:19,119 [INFO] stock_analyzer: --- Analyzing TITAN [SWING] ---
+2026-04-27 10:53:19,119 [INFO] stock_analyzer: Fetching TITAN [5m/5d] from yfinance
+2026-04-27 10:53:20,687 [INFO] stock_analyzer: Fetching TITAN [1h/60d] from yfinance
+2026-04-27 10:53:23,227 [INFO] stock_analyzer: Fetching TITAN [1d/1y] from yfinance
+2026-04-27 10:53:24,686 [INFO] stock_analyzer: Fetched fundamentals for TITAN: PE=0.0, ROE=0.0
+2026-04-27 10:53:27,123 [INFO] stock_analyzer: Sending TITAN to Gemini (gemini-2.5-flash) for SWING analysis...
+2026-04-27 10:53:32,672 [WARNING] stock_analyzer: Gemini output hit MAX_TOKENS at 800 tokens; retrying with a larger limit.
+2026-04-27 10:53:42,918 [ERROR] stock_analyzer: JSON parse error for TITAN: Expecting property name enclosed in double quotes: line 6 column 46 (char 133) | Raw: {
+  "symbol": "TITAN",
+  "signal": "AVOID",
+  "trade_type": "SWING",
+  "confidence": 3,
+  "setup_type": "Consolidation / Indecision",
+2026-04-27 10:53:42,918 [INFO] stock_analyzer: TITAN -> AVOID | Confidence: 0/10 | Entry: None | Target: None | SL: None
+2026-04-27 10:56:39,032 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 10:56:39,038 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-27 10:56:41,304 [INFO] stock_analyzer: Sending RELIANCE to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 10:56:46,697 [WARNING] stock_analyzer: Gemini output hit MAX_TOKENS at 800 tokens; retrying with a larger limit.
+2026-04-27 10:56:56,445 [ERROR] stock_analyzer: JSON parse error for RELIANCE: Unterminated string starting at: line 6 column 17 (char 110) | Raw: {
+  "symbol": "RELIANCE",
+  "signal": "SELL",
+  "trade_type": "INTRADAY",
+  "confidence": 70,
+  "setup_type": "VWAP Re
+2026-04-27 10:56:56,445 [INFO] stock_analyzer: RELIANCE -> AVOID | Confidence: 0/10 | Entry: None | Target: None | SL: None
+2026-04-27 11:00:55,569 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:00:55,569 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-27 11:00:58,483 [INFO] stock_analyzer: Sending RELIANCE to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:01:03,751 [WARNING] stock_analyzer: Gemini output hit MAX_TOKENS at 800 tokens; retrying with a larger limit.
+2026-04-27 11:01:13,659 [ERROR] stock_analyzer: JSON parse error for RELIANCE: Unterminated string starting at: line 6 column 17 (char 109) | Raw: {
+  "symbol": "RELIANCE",
+  "signal": "SELL",
+  "trade_type": "INTRADAY",
+  "confidence": 7,
+  "setup_type": "VWAP Rejection /
+2026-04-27 11:01:13,659 [INFO] stock_analyzer: RELIANCE -> AVOID | Confidence: 0/10 | Entry: None | Target: None | SL: None
+2026-04-27 11:10:27,821 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:10:27,821 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-27 11:10:29,649 [INFO] stock_analyzer: Sending RELIANCE to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:10:31,687 [INFO] stock_analyzer: RELIANCE -> SELL | Confidence: 6/10 | Entry: 1335.1 | Target: 1333.0 | SL: 1340.06
+2026-04-27 11:13:10,603 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:13:44,873 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:13:44,925 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:13:47,660 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:13:47,737 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:13:59,064 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:13:59,952 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:13:59,952 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-27 11:13:59,987 [INFO] stock_analyzer: ============================================================
+2026-04-27 11:13:59,987 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-27 11:13:59,987 [INFO] stock_analyzer: ============================================================
+2026-04-27 11:13:59,991 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-27 11:13:59,991 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-27 11:14:01,849 [INFO] stock_analyzer: Sending RELIANCE to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:14:04,154 [INFO] stock_analyzer: RELIANCE -> SELL | Confidence: 6/10 | Entry: 1335.1 | Target: 1333.0 | SL: 1340.06
+2026-04-27 11:14:05,661 [INFO] stock_analyzer: RELIANCE downgraded from SELL to AVOID because R:R 0.14 is below threshold 1.50
+2026-04-27 11:14:06,686 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-27 11:14:06,686 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-27 11:14:09,452 [INFO] stock_analyzer: Sending TCS to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:14:12,895 [INFO] stock_analyzer: TCS -> AVOID | Confidence: 4/10 | Entry: None | Target: None | SL: None
+2026-04-27 11:14:15,411 [INFO] stock_analyzer: [3/15] Processing HDFCBANK
+2026-04-27 11:14:15,411 [INFO] stock_analyzer: --- Analyzing HDFCBANK [INTRADAY] ---
+2026-04-27 11:14:18,075 [INFO] stock_analyzer: Sending HDFCBANK to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:14:21,267 [INFO] stock_analyzer: HDFCBANK -> AVOID | Confidence: 3/10 | Entry: None | Target: None | SL: None
+2026-04-27 11:14:23,804 [INFO] stock_analyzer: [4/15] Processing INFY
+2026-04-27 11:14:23,804 [INFO] stock_analyzer: --- Analyzing INFY [INTRADAY] ---
+2026-04-27 11:14:26,615 [INFO] stock_analyzer: Sending INFY to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:14:29,950 [INFO] stock_analyzer: INFY -> AVOID | Confidence: 4/10 | Entry: None | Target: None | SL: None
+2026-04-27 11:14:32,474 [INFO] stock_analyzer: [5/15] Processing ICICIBANK
+2026-04-27 11:14:32,474 [INFO] stock_analyzer: --- Analyzing ICICIBANK [INTRADAY] ---
+2026-04-27 11:14:34,924 [INFO] stock_analyzer: Sending ICICIBANK to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:14:38,126 [INFO] stock_analyzer: ICICIBANK -> SELL | Confidence: 7/10 | Entry: 1315.0 | Target: 1309.87 | SL: 1318.0
+2026-04-27 11:14:39,631 [INFO] stock_analyzer: ICICIBANK downgraded from SELL to AVOID because R:R 0.92 is below threshold 1.50
+2026-04-27 11:14:40,642 [INFO] stock_analyzer: [6/15] Processing SBIN
+2026-04-27 11:14:40,642 [INFO] stock_analyzer: --- Analyzing SBIN [INTRADAY] ---
+2026-04-27 11:14:42,992 [INFO] stock_analyzer: Sending SBIN to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:14:45,800 [INFO] stock_analyzer: SBIN -> AVOID | Confidence: 4/10 | Entry: None | Target: None | SL: None
+2026-04-27 11:14:48,323 [INFO] stock_analyzer: [7/15] Processing AXISBANK
+2026-04-27 11:14:48,323 [INFO] stock_analyzer: --- Analyzing AXISBANK [INTRADAY] ---
+2026-04-27 11:14:51,134 [INFO] stock_analyzer: Sending AXISBANK to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:14:54,407 [INFO] stock_analyzer: AXISBANK -> SELL | Confidence: 6/10 | Entry: 1313.4 | Target: 1310.87 | SL: 1315.27
+2026-04-27 11:14:55,909 [INFO] stock_analyzer: AXISBANK downgraded from SELL to AVOID because R:R 0.34 is below threshold 1.50
+2026-04-27 11:14:56,918 [INFO] stock_analyzer: [8/15] Processing BAJFINANCE
+2026-04-27 11:14:56,918 [INFO] stock_analyzer: --- Analyzing BAJFINANCE [INTRADAY] ---
+2026-04-27 11:14:59,350 [INFO] stock_analyzer: Sending BAJFINANCE to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:15:02,552 [INFO] stock_analyzer: BAJFINANCE -> SELL | Confidence: 6/10 | Entry: 917.3 | Target: 911.12 | SL: 921.7
+2026-04-27 11:15:04,059 [INFO] stock_analyzer: BAJFINANCE downgraded from SELL to AVOID because R:R 1.40 is below threshold 1.50
+2026-04-27 11:15:05,073 [INFO] stock_analyzer: [9/15] Processing WIPRO
+2026-04-27 11:15:05,073 [INFO] stock_analyzer: --- Analyzing WIPRO [INTRADAY] ---
+2026-04-27 11:15:05,078 [INFO] stock_analyzer: Fetching WIPRO [5m/5d] from yfinance
+2026-04-27 11:15:06,321 [INFO] stock_analyzer: Fetching WIPRO [1h/60d] from yfinance
+2026-04-27 11:15:06,953 [INFO] stock_analyzer: Fetching WIPRO [1d/1y] from yfinance
+2026-04-27 11:15:08,600 [INFO] stock_analyzer: Fetched fundamentals for WIPRO: PE=0.0, ROE=0.0
+2026-04-27 11:15:11,266 [INFO] stock_analyzer: Sending WIPRO to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:15:12,234 [WARNING] stock_analyzer: Gemini API request failed: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 45.419695118s.
+2026-04-27 11:15:12,234 [WARNING] stock_analyzer: Using fallback analysis for WIPRO: Gemini API credits or billing are unavailable for this run.
+2026-04-27 11:15:13,261 [INFO] stock_analyzer: [10/15] Processing LT
+2026-04-27 11:15:13,261 [INFO] stock_analyzer: --- Analyzing LT [INTRADAY] ---
+2026-04-27 11:15:13,263 [INFO] stock_analyzer: Fetching LT [5m/5d] from yfinance
+2026-04-27 11:15:13,975 [INFO] stock_analyzer: Fetching LT [1h/60d] from yfinance
+2026-04-27 11:15:14,584 [INFO] stock_analyzer: Fetching LT [1d/1y] from yfinance
+2026-04-27 11:15:16,350 [INFO] stock_analyzer: Fetched fundamentals for LT: PE=0.0, ROE=0.0
+2026-04-27 11:15:18,833 [WARNING] stock_analyzer: Gemini analysis disabled for this run: Gemini API credits or billing are unavailable for this run.
+2026-04-27 11:15:19,854 [INFO] stock_analyzer: [11/15] Processing TATAMOTORS
+2026-04-27 11:15:19,855 [INFO] stock_analyzer: --- Analyzing TATAMOTORS [INTRADAY] ---
+2026-04-27 11:15:19,857 [INFO] stock_analyzer: Fetching TATAMOTORS [5m/5d] from yfinance
+2026-04-27 11:15:21,467 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-27 11:15:22,577 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:15:22,577 [ERROR] yfinance: 
+1 Failed download:
+2026-04-27 11:15:22,577 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:15:22,583 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-27 11:15:22,588 [INFO] stock_analyzer: Fetching TATAMOTORS [1h/60d] from yfinance
+2026-04-27 11:15:23,473 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-27 11:15:24,286 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=60d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:15:24,302 [ERROR] yfinance: 
+1 Failed download:
+2026-04-27 11:15:24,302 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=60d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:15:24,316 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-27 11:15:24,316 [INFO] stock_analyzer: Fetching TATAMOTORS [1d/1y] from yfinance
+2026-04-27 11:15:25,152 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:15:25,152 [ERROR] yfinance: 
+1 Failed download:
+2026-04-27 11:15:25,152 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:15:25,152 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-27 11:15:25,152 [WARNING] stock_analyzer: No price data for TATAMOTORS, skipping
+2026-04-27 11:15:26,165 [INFO] stock_analyzer: [12/15] Processing TATASTEEL
+2026-04-27 11:15:26,165 [INFO] stock_analyzer: --- Analyzing TATASTEEL [INTRADAY] ---
+2026-04-27 11:15:26,166 [INFO] stock_analyzer: Fetching TATASTEEL [5m/5d] from yfinance
+2026-04-27 11:15:26,945 [INFO] stock_analyzer: Fetching TATASTEEL [1h/60d] from yfinance
+2026-04-27 11:15:27,551 [INFO] stock_analyzer: Fetching TATASTEEL [1d/1y] from yfinance
+2026-04-27 11:15:29,146 [INFO] stock_analyzer: Fetched fundamentals for TATASTEEL: PE=0.0, ROE=0.0
+2026-04-27 11:15:32,876 [INFO] stock_analyzer: [13/15] Processing MARUTI
+2026-04-27 11:15:32,876 [INFO] stock_analyzer: --- Analyzing MARUTI [INTRADAY] ---
+2026-04-27 11:15:32,879 [INFO] stock_analyzer: Fetching MARUTI [5m/5d] from yfinance
+2026-04-27 11:15:33,607 [INFO] stock_analyzer: Fetching MARUTI [1h/60d] from yfinance
+2026-04-27 11:15:34,220 [INFO] stock_analyzer: Fetching MARUTI [1d/1y] from yfinance
+2026-04-27 11:15:35,807 [INFO] stock_analyzer: Fetched fundamentals for MARUTI: PE=0.0, ROE=0.0
+2026-04-27 11:15:39,585 [INFO] stock_analyzer: [14/15] Processing SUNPHARMA
+2026-04-27 11:15:39,587 [INFO] stock_analyzer: --- Analyzing SUNPHARMA [INTRADAY] ---
+2026-04-27 11:15:39,590 [INFO] stock_analyzer: Fetching SUNPHARMA [5m/5d] from yfinance
+2026-04-27 11:15:40,199 [INFO] stock_analyzer: Fetching SUNPHARMA [1h/60d] from yfinance
+2026-04-27 11:15:40,850 [INFO] stock_analyzer: Fetching SUNPHARMA [1d/1y] from yfinance
+2026-04-27 11:15:42,616 [INFO] stock_analyzer: Fetched fundamentals for SUNPHARMA: PE=0.0, ROE=0.0
+2026-04-27 11:15:46,031 [INFO] stock_analyzer: [15/15] Processing NTPC
+2026-04-27 11:15:46,031 [INFO] stock_analyzer: --- Analyzing NTPC [INTRADAY] ---
+2026-04-27 11:15:46,033 [INFO] stock_analyzer: Fetching NTPC [5m/5d] from yfinance
+2026-04-27 11:15:46,638 [INFO] stock_analyzer: Fetching NTPC [1h/60d] from yfinance
+2026-04-27 11:15:47,457 [INFO] stock_analyzer: Fetching NTPC [1d/1y] from yfinance
+2026-04-27 11:15:49,082 [INFO] stock_analyzer: Fetched fundamentals for NTPC: PE=0.0, ROE=0.0
+2026-04-27 11:15:52,577 [INFO] stock_analyzer: Scan complete. 0/14 stocks generated actionable signals.
+2026-04-27 11:15:57,579 [INFO] stock_analyzer: ============================================================
+2026-04-27 11:15:57,579 [INFO] stock_analyzer: Starting SWING scan: 10 stocks | Min confidence: 7
+2026-04-27 11:15:57,579 [INFO] stock_analyzer: ============================================================
+2026-04-27 11:15:57,579 [INFO] stock_analyzer: [1/10] Processing ADANIENT
+2026-04-27 11:15:57,579 [INFO] stock_analyzer: --- Analyzing ADANIENT [SWING] ---
+2026-04-27 11:15:57,583 [INFO] stock_analyzer: Fetching ADANIENT [5m/5d] from yfinance
+2026-04-27 11:15:58,191 [INFO] stock_analyzer: Fetching ADANIENT [1h/60d] from yfinance
+2026-04-27 11:15:58,783 [INFO] stock_analyzer: Fetching ADANIENT [1d/1y] from yfinance
+2026-04-27 11:16:00,537 [INFO] stock_analyzer: Fetched fundamentals for ADANIENT: PE=0.0, ROE=0.0
+2026-04-27 11:16:04,103 [INFO] stock_analyzer: [2/10] Processing ADANIPORTS
+2026-04-27 11:16:04,103 [INFO] stock_analyzer: --- Analyzing ADANIPORTS [SWING] ---
+2026-04-27 11:16:04,106 [INFO] stock_analyzer: Fetching ADANIPORTS [5m/5d] from yfinance
+2026-04-27 11:16:04,895 [INFO] stock_analyzer: Fetching ADANIPORTS [1h/60d] from yfinance
+2026-04-27 11:16:05,723 [INFO] stock_analyzer: Fetching ADANIPORTS [1d/1y] from yfinance
+2026-04-27 11:16:07,382 [INFO] stock_analyzer: Fetched fundamentals for ADANIPORTS: PE=0.0, ROE=0.0
+2026-04-27 11:16:10,874 [INFO] stock_analyzer: [3/10] Processing ULTRACEMCO
+2026-04-27 11:16:10,874 [INFO] stock_analyzer: --- Analyzing ULTRACEMCO [SWING] ---
+2026-04-27 11:16:10,874 [INFO] stock_analyzer: Fetching ULTRACEMCO [5m/5d] from yfinance
+2026-04-27 11:16:11,550 [INFO] stock_analyzer: Fetching ULTRACEMCO [1h/60d] from yfinance
+2026-04-27 11:16:12,187 [INFO] stock_analyzer: Fetching ULTRACEMCO [1d/1y] from yfinance
+2026-04-27 11:16:14,012 [INFO] stock_analyzer: Fetched fundamentals for ULTRACEMCO: PE=0.0, ROE=0.0
+2026-04-27 11:16:17,633 [INFO] stock_analyzer: [4/10] Processing NESTLEIND
+2026-04-27 11:16:17,633 [INFO] stock_analyzer: --- Analyzing NESTLEIND [SWING] ---
+2026-04-27 11:16:17,633 [INFO] stock_analyzer: Fetching NESTLEIND [5m/5d] from yfinance
+2026-04-27 11:16:18,283 [INFO] stock_analyzer: Fetching NESTLEIND [1h/60d] from yfinance
+2026-04-27 11:16:19,115 [INFO] stock_analyzer: Fetching NESTLEIND [1d/1y] from yfinance
+2026-04-27 11:16:20,627 [INFO] stock_analyzer: Fetched fundamentals for NESTLEIND: PE=0.0, ROE=0.0
+2026-04-27 11:16:24,199 [INFO] stock_analyzer: [5/10] Processing TITAN
+2026-04-27 11:16:24,199 [INFO] stock_analyzer: --- Analyzing TITAN [SWING] ---
+2026-04-27 11:16:27,831 [INFO] stock_analyzer: [6/10] Processing POWERGRID
+2026-04-27 11:16:27,831 [INFO] stock_analyzer: --- Analyzing POWERGRID [SWING] ---
+2026-04-27 11:16:27,831 [INFO] stock_analyzer: Fetching POWERGRID [5m/5d] from yfinance
+2026-04-27 11:16:28,580 [INFO] stock_analyzer: Fetching POWERGRID [1h/60d] from yfinance
+2026-04-27 11:16:29,200 [INFO] stock_analyzer: Fetching POWERGRID [1d/1y] from yfinance
+2026-04-27 11:16:30,981 [INFO] stock_analyzer: Fetched fundamentals for POWERGRID: PE=0.0, ROE=0.0
+2026-04-27 11:16:34,700 [INFO] stock_analyzer: [7/10] Processing ONGC
+2026-04-27 11:16:34,700 [INFO] stock_analyzer: --- Analyzing ONGC [SWING] ---
+2026-04-27 11:16:34,701 [INFO] stock_analyzer: Fetching ONGC [5m/5d] from yfinance
+2026-04-27 11:16:35,358 [INFO] stock_analyzer: Fetching ONGC [1h/60d] from yfinance
+2026-04-27 11:16:36,248 [INFO] stock_analyzer: Fetching ONGC [1d/1y] from yfinance
+2026-04-27 11:16:37,814 [INFO] stock_analyzer: Fetched fundamentals for ONGC: PE=0.0, ROE=0.0
+2026-04-27 11:16:41,614 [INFO] stock_analyzer: [8/10] Processing COALINDIA
+2026-04-27 11:16:41,614 [INFO] stock_analyzer: --- Analyzing COALINDIA [SWING] ---
+2026-04-27 11:16:41,617 [INFO] stock_analyzer: Fetching COALINDIA [5m/5d] from yfinance
+2026-04-27 11:16:42,298 [INFO] stock_analyzer: Fetching COALINDIA [1h/60d] from yfinance
+2026-04-27 11:16:42,940 [INFO] stock_analyzer: Fetching COALINDIA [1d/1y] from yfinance
+2026-04-27 11:16:44,514 [INFO] stock_analyzer: Fetched fundamentals for COALINDIA: PE=0.0, ROE=0.0
+2026-04-27 11:16:47,910 [INFO] stock_analyzer: [9/10] Processing DIVISLAB
+2026-04-27 11:16:47,910 [INFO] stock_analyzer: --- Analyzing DIVISLAB [SWING] ---
+2026-04-27 11:16:47,914 [INFO] stock_analyzer: Fetching DIVISLAB [5m/5d] from yfinance
+2026-04-27 11:16:48,598 [INFO] stock_analyzer: Fetching DIVISLAB [1h/60d] from yfinance
+2026-04-27 11:16:49,371 [INFO] stock_analyzer: Fetching DIVISLAB [1d/1y] from yfinance
+2026-04-27 11:16:51,000 [INFO] stock_analyzer: Fetched fundamentals for DIVISLAB: PE=0.0, ROE=0.0
+2026-04-27 11:16:54,469 [INFO] stock_analyzer: [10/10] Processing DRREDDY
+2026-04-27 11:16:54,469 [INFO] stock_analyzer: --- Analyzing DRREDDY [SWING] ---
+2026-04-27 11:16:54,472 [INFO] stock_analyzer: Fetching DRREDDY [5m/5d] from yfinance
+2026-04-27 11:16:55,147 [INFO] stock_analyzer: Fetching DRREDDY [1h/60d] from yfinance
+2026-04-27 11:16:55,861 [INFO] stock_analyzer: Fetching DRREDDY [1d/1y] from yfinance
+2026-04-27 11:16:57,464 [INFO] stock_analyzer: Fetched fundamentals for DRREDDY: PE=0.0, ROE=0.0
+2026-04-27 11:17:01,100 [INFO] stock_analyzer: Scan complete. 0/10 stocks generated actionable signals.
+2026-04-27 11:17:01,114 [INFO] stock_analyzer: Saved intelligence report to D:\Projects\Stock Analysis\stock_analyzer\output\reports\trade_intelligence_20260427_111701.md
+2026-04-27 11:17:01,114 [INFO] stock_analyzer: 
+# Trade Intelligence Report - 27-Apr-2026 11:17 IST
+Market Pulse: Nifty sideways 0.57% | VIX 18.765 | FII/DII unavailable
+
+## Intraday Setups (Valid till 3:15 PM IST)
+No qualifying setups.
+
+## Swing Setups (3-10 Days)
+No qualifying setups.
+
+## Next Session Outlook
+ICICIBANK: Bearish (99%) - Watch support Rs 1312.83, resistance Rs 1318.23
+BAJFINANCE: Bearish (70%) - Watch support Rs 911.12, resistance Rs 917.77
+AXISBANK: Bearish (70%) - Watch support Rs 1312.13, resistance Rs 1314.33
+RELIANCE: Bearish (65%) - Watch support Rs 1334.40, resistance Rs 1336.80
+TCS: Bullish (60%) - Watch support Rs 2432.17, resistance Rs 2436.67
+
+Disclaimer: Educational and research use only. Validate every setup before trading.
+2026-04-27 11:17:01,114 [INFO] stock_analyzer: Top intelligence report saved: D:\Projects\Stock Analysis\stock_analyzer\output\reports\trade_intelligence_20260427_111701.md
+2026-04-27 11:17:01,425 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:28:51,548 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:29:07,274 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:29:07,324 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:29:09,488 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:29:10,800 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:29:10,800 [INFO] stock_analyzer: Running combined intraday + swing scan
+2026-04-27 11:29:10,814 [INFO] stock_analyzer: Fetching ^NSEI [1d/3mo] from yfinance
+2026-04-27 11:29:11,873 [INFO] stock_analyzer: Fetching ^NSEBANK [1d/3mo] from yfinance
+2026-04-27 11:29:12,395 [INFO] stock_analyzer: Fetching ^INDIAVIX [1d/3mo] from yfinance
+2026-04-27 11:29:12,919 [INFO] stock_analyzer: ============================================================
+2026-04-27 11:29:12,919 [INFO] stock_analyzer: Starting INTRADAY scan: 15 stocks | Min confidence: 7
+2026-04-27 11:29:12,919 [INFO] stock_analyzer: ============================================================
+2026-04-27 11:29:12,919 [INFO] stock_analyzer: [1/15] Processing RELIANCE
+2026-04-27 11:29:12,919 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-27 11:29:12,927 [INFO] stock_analyzer: Fetching RELIANCE [5m/5d] from yfinance
+2026-04-27 11:29:13,600 [INFO] stock_analyzer: Fetching RELIANCE [1h/60d] from yfinance
+2026-04-27 11:29:14,293 [INFO] stock_analyzer: Fetching RELIANCE [1d/1y] from yfinance
+2026-04-27 11:29:17,915 [INFO] stock_analyzer: Sending RELIANCE to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:29:18,982 [WARNING] stock_analyzer: Gemini API request failed: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 38.713394776s.
+2026-04-27 11:29:18,982 [WARNING] stock_analyzer: Using fallback analysis for RELIANCE: Gemini API credits or billing are unavailable for this run.
+2026-04-27 11:29:19,994 [INFO] stock_analyzer: [2/15] Processing TCS
+2026-04-27 11:29:19,994 [INFO] stock_analyzer: --- Analyzing TCS [INTRADAY] ---
+2026-04-27 11:29:19,998 [INFO] stock_analyzer: Fetching TCS [5m/5d] from yfinance
+2026-04-27 11:29:20,547 [INFO] stock_analyzer: Fetching TCS [1h/60d] from yfinance
+2026-04-27 11:29:21,134 [INFO] stock_analyzer: Fetching TCS [1d/1y] from yfinance
+2026-04-27 11:29:23,368 [WARNING] stock_analyzer: Gemini analysis disabled for this run: Gemini API credits or billing are unavailable for this run.
+2026-04-27 11:29:24,382 [INFO] stock_analyzer: [3/15] Processing HDFCBANK
+2026-04-27 11:29:24,382 [INFO] stock_analyzer: --- Analyzing HDFCBANK [INTRADAY] ---
+2026-04-27 11:29:24,384 [INFO] stock_analyzer: Fetching HDFCBANK [5m/5d] from yfinance
+2026-04-27 11:29:24,944 [INFO] stock_analyzer: Fetching HDFCBANK [1h/60d] from yfinance
+2026-04-27 11:29:25,481 [INFO] stock_analyzer: Fetching HDFCBANK [1d/1y] from yfinance
+2026-04-27 11:29:28,694 [INFO] stock_analyzer: [4/15] Processing INFY
+2026-04-27 11:29:28,694 [INFO] stock_analyzer: --- Analyzing INFY [INTRADAY] ---
+2026-04-27 11:29:28,697 [INFO] stock_analyzer: Fetching INFY [5m/5d] from yfinance
+2026-04-27 11:29:29,274 [INFO] stock_analyzer: Fetching INFY [1h/60d] from yfinance
+2026-04-27 11:29:29,823 [INFO] stock_analyzer: Fetching INFY [1d/1y] from yfinance
+2026-04-27 11:29:33,057 [INFO] stock_analyzer: [5/15] Processing ICICIBANK
+2026-04-27 11:29:33,057 [INFO] stock_analyzer: --- Analyzing ICICIBANK [INTRADAY] ---
+2026-04-27 11:29:33,057 [INFO] stock_analyzer: Fetching ICICIBANK [5m/5d] from yfinance
+2026-04-27 11:29:33,590 [INFO] stock_analyzer: Fetching ICICIBANK [1h/60d] from yfinance
+2026-04-27 11:29:34,148 [INFO] stock_analyzer: Fetching ICICIBANK [1d/1y] from yfinance
+2026-04-27 11:29:37,414 [INFO] stock_analyzer: [6/15] Processing SBIN
+2026-04-27 11:29:37,414 [INFO] stock_analyzer: --- Analyzing SBIN [INTRADAY] ---
+2026-04-27 11:29:37,414 [INFO] stock_analyzer: Fetching SBIN [5m/5d] from yfinance
+2026-04-27 11:29:38,036 [INFO] stock_analyzer: Fetching SBIN [1h/60d] from yfinance
+2026-04-27 11:29:38,628 [INFO] stock_analyzer: Fetching SBIN [1d/1y] from yfinance
+2026-04-27 11:29:42,787 [INFO] stock_analyzer: [7/15] Processing AXISBANK
+2026-04-27 11:29:42,787 [INFO] stock_analyzer: --- Analyzing AXISBANK [INTRADAY] ---
+2026-04-27 11:29:42,789 [INFO] stock_analyzer: Fetching AXISBANK [5m/5d] from yfinance
+2026-04-27 11:29:43,415 [INFO] stock_analyzer: Fetching AXISBANK [1h/60d] from yfinance
+2026-04-27 11:29:44,025 [INFO] stock_analyzer: Fetching AXISBANK [1d/1y] from yfinance
+2026-04-27 11:29:48,265 [INFO] stock_analyzer: [8/15] Processing BAJFINANCE
+2026-04-27 11:29:48,265 [INFO] stock_analyzer: --- Analyzing BAJFINANCE [INTRADAY] ---
+2026-04-27 11:29:48,267 [INFO] stock_analyzer: Fetching BAJFINANCE [5m/5d] from yfinance
+2026-04-27 11:29:48,880 [INFO] stock_analyzer: Fetching BAJFINANCE [1h/60d] from yfinance
+2026-04-27 11:29:49,572 [INFO] stock_analyzer: Fetching BAJFINANCE [1d/1y] from yfinance
+2026-04-27 11:29:53,643 [INFO] stock_analyzer: [9/15] Processing WIPRO
+2026-04-27 11:29:53,643 [INFO] stock_analyzer: --- Analyzing WIPRO [INTRADAY] ---
+2026-04-27 11:29:57,442 [INFO] stock_analyzer: [10/15] Processing LT
+2026-04-27 11:29:57,442 [INFO] stock_analyzer: --- Analyzing LT [INTRADAY] ---
+2026-04-27 11:30:01,228 [INFO] stock_analyzer: [11/15] Processing TATAMOTORS
+2026-04-27 11:30:01,228 [INFO] stock_analyzer: --- Analyzing TATAMOTORS [INTRADAY] ---
+2026-04-27 11:30:01,230 [INFO] stock_analyzer: Fetching TATAMOTORS [5m/5d] from yfinance
+2026-04-27 11:30:02,901 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-27 11:30:04,023 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:30:04,026 [ERROR] yfinance: 
+1 Failed download:
+2026-04-27 11:30:04,026 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:30:04,033 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-27 11:30:04,041 [INFO] stock_analyzer: Fetching TATAMOTORS [1h/60d] from yfinance
+2026-04-27 11:30:04,680 [ERROR] yfinance: HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-27 11:30:05,481 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=60d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:30:05,488 [ERROR] yfinance: 
+1 Failed download:
+2026-04-27 11:30:05,488 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=60d) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:30:05,517 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-27 11:30:05,527 [INFO] stock_analyzer: Fetching TATAMOTORS [1d/1y] from yfinance
+2026-04-27 11:30:06,314 [ERROR] yfinance: $TATAMOTORS.NS: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:30:06,316 [ERROR] yfinance: 
+1 Failed download:
+2026-04-27 11:30:06,321 [ERROR] yfinance: ['TATAMOTORS.NS']: possibly delisted; no price data found  (period=1y) (Yahoo error = "No data found, symbol may be delisted")
+2026-04-27 11:30:06,330 [WARNING] stock_analyzer: No data returned for TATAMOTORS
+2026-04-27 11:30:06,330 [WARNING] stock_analyzer: No price data for TATAMOTORS, skipping
+2026-04-27 11:30:07,332 [INFO] stock_analyzer: [12/15] Processing TATASTEEL
+2026-04-27 11:30:07,332 [INFO] stock_analyzer: --- Analyzing TATASTEEL [INTRADAY] ---
+2026-04-27 11:30:10,820 [INFO] stock_analyzer: [13/15] Processing MARUTI
+2026-04-27 11:30:10,820 [INFO] stock_analyzer: --- Analyzing MARUTI [INTRADAY] ---
+2026-04-27 11:30:14,400 [INFO] stock_analyzer: [14/15] Processing SUNPHARMA
+2026-04-27 11:30:14,400 [INFO] stock_analyzer: --- Analyzing SUNPHARMA [INTRADAY] ---
+2026-04-27 11:30:17,951 [INFO] stock_analyzer: [15/15] Processing NTPC
+2026-04-27 11:30:17,951 [INFO] stock_analyzer: --- Analyzing NTPC [INTRADAY] ---
+2026-04-27 11:30:21,501 [INFO] stock_analyzer: Scan complete. 0/14 stocks generated actionable signals.
+2026-04-27 11:30:26,502 [INFO] stock_analyzer: ============================================================
+2026-04-27 11:30:26,502 [INFO] stock_analyzer: Starting SWING scan: 10 stocks | Min confidence: 7
+2026-04-27 11:30:26,502 [INFO] stock_analyzer: ============================================================
+2026-04-27 11:30:26,502 [INFO] stock_analyzer: [1/10] Processing ADANIENT
+2026-04-27 11:30:26,502 [INFO] stock_analyzer: --- Analyzing ADANIENT [SWING] ---
+2026-04-27 11:30:30,010 [INFO] stock_analyzer: [2/10] Processing ADANIPORTS
+2026-04-27 11:30:30,010 [INFO] stock_analyzer: --- Analyzing ADANIPORTS [SWING] ---
+2026-04-27 11:30:33,430 [INFO] stock_analyzer: [3/10] Processing ULTRACEMCO
+2026-04-27 11:30:33,430 [INFO] stock_analyzer: --- Analyzing ULTRACEMCO [SWING] ---
+2026-04-27 11:30:36,748 [INFO] stock_analyzer: [4/10] Processing NESTLEIND
+2026-04-27 11:30:36,750 [INFO] stock_analyzer: --- Analyzing NESTLEIND [SWING] ---
+2026-04-27 11:30:40,199 [INFO] stock_analyzer: [5/10] Processing TITAN
+2026-04-27 11:30:40,199 [INFO] stock_analyzer: --- Analyzing TITAN [SWING] ---
+2026-04-27 11:30:40,201 [INFO] stock_analyzer: Fetching TITAN [5m/5d] from yfinance
+2026-04-27 11:30:40,795 [INFO] stock_analyzer: Fetching TITAN [1h/60d] from yfinance
+2026-04-27 11:30:41,546 [INFO] stock_analyzer: Fetching TITAN [1d/1y] from yfinance
+2026-04-27 11:30:45,768 [INFO] stock_analyzer: [6/10] Processing POWERGRID
+2026-04-27 11:30:45,768 [INFO] stock_analyzer: --- Analyzing POWERGRID [SWING] ---
+2026-04-27 11:30:49,248 [INFO] stock_analyzer: [7/10] Processing ONGC
+2026-04-27 11:30:49,248 [INFO] stock_analyzer: --- Analyzing ONGC [SWING] ---
+2026-04-27 11:30:52,723 [INFO] stock_analyzer: [8/10] Processing COALINDIA
+2026-04-27 11:30:52,723 [INFO] stock_analyzer: --- Analyzing COALINDIA [SWING] ---
+2026-04-27 11:30:56,203 [INFO] stock_analyzer: [9/10] Processing DIVISLAB
+2026-04-27 11:30:56,203 [INFO] stock_analyzer: --- Analyzing DIVISLAB [SWING] ---
+2026-04-27 11:30:59,694 [INFO] stock_analyzer: [10/10] Processing DRREDDY
+2026-04-27 11:30:59,694 [INFO] stock_analyzer: --- Analyzing DRREDDY [SWING] ---
+2026-04-27 11:31:03,181 [INFO] stock_analyzer: Scan complete. 0/10 stocks generated actionable signals.
+2026-04-27 11:31:03,187 [INFO] stock_analyzer: Saved intelligence report to D:\Projects\Stock Analysis\stock_analyzer\output\reports\trade_intelligence_20260427_113103.md
+2026-04-27 11:31:03,187 [INFO] stock_analyzer: 
+# Trade Intelligence Report - 27-Apr-2026 11:31 IST
+Market Pulse: Nifty sideways 0.57% | VIX 18.655 | FII/DII unavailable
+
+## Intraday Setups (Valid till 3:15 PM IST)
+No qualifying setups.
+
+## Swing Setups (3-10 Days)
+No qualifying setups.
+
+## Next Session Outlook
+RELIANCE: Neutral (0%) - Watch support Rs 1337.13, resistance Rs 1338.93
+TCS: Neutral (0%) - Watch support Rs 2435.30, resistance Rs 2441.60
+HDFCBANK: Neutral (0%) - Watch support Rs 787.02, resistance Rs 788.37
+INFY: Neutral (0%) - Watch support Rs 1173.27, resistance Rs 1176.27
+ICICIBANK: Neutral (0%) - Watch support Rs 1315.87, resistance Rs 1319.57
+
+Disclaimer: Educational and research use only. Validate every setup before trading.
+2026-04-27 11:31:03,187 [INFO] stock_analyzer: Top intelligence report saved: D:\Projects\Stock Analysis\stock_analyzer\output\reports\trade_intelligence_20260427_113103.md
+2026-04-27 11:31:03,498 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:31:39,208 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:31:39,208 [INFO] stock_analyzer: --- Analyzing TITAN [SWING] ---
+2026-04-27 11:31:41,030 [INFO] stock_analyzer: Sending TITAN to Gemini (gemini-2.5-flash) for SWING analysis...
+2026-04-27 11:31:41,768 [WARNING] stock_analyzer: Gemini API request failed: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 15.884207422s.
+2026-04-27 11:31:41,768 [WARNING] stock_analyzer: Using fallback analysis for TITAN: Gemini API credits or billing are unavailable for this run.
+2026-04-27 11:38:50,706 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:38:50,706 [INFO] stock_analyzer: --- Analyzing TITAN [SWING] ---
+2026-04-27 11:38:52,565 [INFO] stock_analyzer: Sending TITAN to Gemini (gemini-2.5-flash) for SWING analysis...
+2026-04-27 11:38:53,301 [WARNING] stock_analyzer: Gemini API request failed: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 4.36046021s.
+2026-04-27 11:38:53,301 [WARNING] stock_analyzer: Using fallback analysis for TITAN: Gemini API credits or billing are unavailable for this run.
+2026-04-27 11:38:58,277 [INFO] stock_analyzer: Database initialized at D:\Projects\Stock Analysis\stock_analyzer\db\signals.db
+2026-04-27 11:38:58,277 [INFO] stock_analyzer: --- Analyzing RELIANCE [INTRADAY] ---
+2026-04-27 11:38:59,990 [INFO] stock_analyzer: Sending RELIANCE to Gemini (gemini-2.5-flash) for INTRADAY analysis...
+2026-04-27 11:39:00,771 [WARNING] stock_analyzer: Gemini API request failed: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 56.913955083s.
+2026-04-27 11:39:00,773 [WARNING] stock_analyzer: Using fallback analysis for RELIANCE: Gemini API credits or billing are unavailable for this run.

@@ -7,6 +7,7 @@ import types
 def _install_pyarrow_stub():
     pyarrow = types.ModuleType("pyarrow")
     pyarrow.__version__ = "0.0.0"
+    pyarrow.__codex_stub__ = True
     pyarrow.Array = type("Array", (), {})
     pyarrow.ChunkedArray = type("ChunkedArray", (), {})
     pyarrow.Scalar = type("Scalar", (), {})

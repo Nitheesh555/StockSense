@@ -187,7 +187,7 @@ WIPRO       → Bearish Bias (65%) — MACD crossover down, below 50 EMA
 |---|---|
 | **Data Source** | `yfinance`, NSE Python library, or TradingView webhook |
 | **Indicators** | `pandas-ta` or `TA-Lib` |
-| **AI Analysis** | OpenAI GPT API |
+| **AI Analysis** | Gemini API |
 | **Scheduler** | `APScheduler` — run at 9:00 AM & 3:30 PM IST |
 | **Frontend** | Streamlit dashboard or Telegram Bot |
 | **Storage** | SQLite or Firebase for trade log & performance tracking |
@@ -208,7 +208,7 @@ trading-intelligence/
 │   ├── scorer.py               # Stock conviction scoring
 │   └── risk.py                 # Position sizing & risk management
 ├── ai/
-│   └── analyst.py              # OpenAI GPT integration
+│   └── analyst.py              # Gemini integration
 ├── context/
 │   ├── market_pulse.py         # Nifty/BankNifty trend filter
 │   ├── sector_rotation.py      # Sector strength ranking

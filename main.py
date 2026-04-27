@@ -10,7 +10,7 @@ Architecture:
     1. Load watchlist
     2. For each stock: fetch OHLCV + fundamentals + option chain
     3. Compute technical indicators and detect patterns
-    4. Send to GPT for synthesis
+    4. Send to Gemini for synthesis
     5. Save signals to SQLite and send Telegram alerts
     6. View results in Streamlit dashboard
 """
@@ -24,7 +24,7 @@ from config import (
     PREMARKET_SCAN_HOUR, PREMARKET_SCAN_MINUTE,
     SCAN_HOUR, SCAN_MINUTE, MIDDAY_SCAN_HOUR, MIDDAY_SCAN_MINUTE,
     EOD_SCAN_HOUR, EOD_SCAN_MINUTE, NEXT_SESSION_SCAN_HOUR, NEXT_SESSION_SCAN_MINUTE,
-    load_watchlist, get_settings, logger, OPENAI_API_KEY
+    load_watchlist, get_settings, logger, GEMINI_API_KEY
 )
 from data.cache import init_db, save_signal
 from data.fetcher import fetch_multi_timeframe, fetch_option_chain
@@ -43,13 +43,13 @@ from output.report_generator import build_intelligence_report, persist_intellige
 
 
 def check_api_key():
-    if not OPENAI_API_KEY:
+    if not GEMINI_API_KEY:
         logger.error(
             "\n" + "="*60 +
-            "\nOPENAI_API_KEY is not set!" +
+            "\nGEMINI_API_KEY is not set!" +
             "\nSteps to fix:" +
             "\n  1. Copy .env.example to .env" +
-            "\n  2. Add your API key from https://platform.openai.com/api-keys" +
+            "\n  2. Add your API key from https://ai.google.dev/" +
             "\n  3. Run again" +
             "\n" + "="*60
         )
@@ -58,7 +58,7 @@ def check_api_key():
 
 def _normalize_signal_fields(signal: dict, indicators: dict, trade_type: str,
                              setup_context: dict, pre_levels: dict) -> dict:
-    """Fill new intelligence fields from local rules when GPT omits or nulls them."""
+    """Fill new intelligence fields from local rules when Gemini omits or nulls them."""
     if not signal:
         return signal
 

@@ -6,7 +6,7 @@ This repository is an NSE stock signal analyzer. Treat `stock_analyzer/` as the 
 
 - Pulls NSE price data, fundamentals, and option-chain data.
 - Computes technical indicators and chart patterns.
-- Sends the result to OpenAI for a structured trade signal.
+- Sends the result to Gemini for a structured trade signal.
 - Stores signals in SQLite and exposes them in a Streamlit dashboard.
 - Optionally sends Telegram alerts.
 
@@ -42,7 +42,7 @@ python scheduler.py
 - `config.py` centralizes paths, env vars, and trading parameters.
 - `data/fetcher.py` and `data/fundamentals.py` handle external data access.
 - `analysis/` contains technical analysis and signal logic.
-- `ai/` contains prompt construction and OpenAI integration.
+- `ai/` contains prompt construction and Gemini integration.
 
 ## Verification
 
